@@ -1,5 +1,19 @@
+/* making the carousel */
 
-img { 
+.carousel .item {
+  height: 300px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+/*
+@media (prefers-reduced-motion)
+img { remeber carousel-item if it breaks. Add this to the carousel to contain the image, after role listbox style=" width:100%; height: 500px !important;"
   max-width: 100%;
   max-height: 50%;
   float: center;
@@ -8,11 +22,11 @@ img {
   width: 250px;
   height: 150px;
   margin-top: 10px;
-  line-height: 150px;*/
+  line-height: 150px;
   display: block;
     
 
-}
+} */
 
 a {target="_blank"}
 
