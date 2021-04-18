@@ -1,0 +1,35 @@
+
+
+
+/* header and footing formating, made them sticky. */
+   body{        
+	padding-top: 60px;
+	padding-bottom: 40px; }
+
+	.container{
+        width: 100%;
+        margin: 0 auto; /
+
+    }
+   
+	.fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        
+        padding: 10px 0
+    }
+    .fixed-header{
+        top: 0;
+        background-color: darkslategrey;
+    }
+    .fixed-footer{
+      
+      background-color: inherit;
+        bottom: 0;
+        text-align: center;
+    } 
+/* aligning header tags */
+
+h1 , h2 , h3 , h4 {text-align: center; font-size: 2vh;}
+
+.img-fluid. {max-width:100 height auto;}
