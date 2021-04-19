@@ -2,46 +2,50 @@
 <html>
 
 <head>
-  <title>Wild Cats Federation</title>
+  <title>Newsletter Signup</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="css/formcss.css" rel="stylesheet" id="form">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body class="bg-dark text-light">
-     <header>
+  <header>
     <div class="fixed-header">
       <nav class="navbar fixed-top navbar-dark bg-dark">
         <span class="navbar-text"><a href="index.html">Main Page</a></span>
         <span class="navbar-text"><a href="gallery.html">Gallery</a></span>
         <span class="navbar-text"><a href="form.html">Newsletter</a></span>
-        <span class="navbar-text"><a href="about.html">About</a></span>
+        <span class="navbar-text"><a href="donate.html">Donate</a></span>
         <span class="navbar-text"><a href="contact.html">Contact</a></span>
       </nav>
-    </div></header>
-  <section class="newsletter">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="content">
-            <h2>Subscribe to our newletter to get semi-monthly updates!<h2>
-                <div class="input-group">
-                  <input type="email" class="form-control" placeholder="Enter your email">
-                  <span class="input-group-btn">
-                    <a class="btn" href="nsconfim.html" role="button">Subscribe</a>
-                  </span>
-                </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+  </header>
+  <!--This was suppose-->
+<div class="jumbotron-fluid">
+  <div class="container justify-content-center">
+    <p style="font-size: 5vh;">If you would like to keep up to date with the latest development of our project you can do so by signing up to our newsletter here on this page</p></div>
+  <form>
+
+    <div class="form-group">
+      
+      <input type="email" class="form-control" id="newsletterEmail" aria-describedby="emailHelp"
+        placeholder="Enter your email adress here!">
+    </div>
+    <a href="nsconfim.html" type="submit" class="btn btn-dark btn-block"><p>Click here to sign up to our newsletter!</p></a>
+
+  </form>
+  </div></div>
+
+
   <div class="fixed-footer" style="text-align: center">Wild Cats Conservation Federation - 2021
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  </div></div>
+  
+</body>
+<!--bootstrap and jquery scripts-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -50,5 +54,4 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
-</body>
+</html>
