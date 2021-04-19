@@ -1,31 +1,23 @@
 
+/*rezsing of all images*/
+.jumbotron-fluid > img {
+  display: block;
+  max-width: 300px;
+  max-height: 250px;
+  height: auto;
+  width: auto;
+}
+.jumbotron-fluid {
 
-/* hero image */
-
-.hero-image {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/waterfalls.png");
-	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/waterfalls.png");
+background-size: cover;
 }
 
-.hero-text {
-	text-align: center;
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
-}
-
-
-.hero-text button:hover {
-	background-color: #555;
-	color: white;
-
-}
+img {display: block;
+max-width: 250px;
+max-height:250px;
+height: auto;
+width: auto;}
 
 /*sticky footer and header */
    body{        
@@ -38,25 +30,24 @@
 
     }
    
-    }
+    
 
-	.fixed-header, .fixed-footer{
+	.fixed-header, .fixed-footer {
         width: 100%;
         position: fixed;        
-        
         padding: 10px 0
     }
     .fixed-header{
-        top: 0;
-	
-		padding: 10px 0;
-		color: white;
+        
+		z-index: 2;
+		
     }
-	.fixed-footer{
+	.fixed-footer {
       
-		background-color: inherit;
-		  bottom: 0;
+		
+		  bottom: 0%;
 		  text-align: center;
+
 	  } 
        
 
