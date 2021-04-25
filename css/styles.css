@@ -11,15 +11,16 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/waterfalls.png");
   background-size: cover;
   }
-  
-  img { display: block;
-  max-width: 250px;
-  max-height:250px;
-  height: auto;
-  width: auto;}
-  
+/*
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+	image: */
+}
+ 
   /*sticky footer and header, not sure if these are all req for my current implementation think only the z axis for the header is needed. Probably the padding, otherwise it will be really thin, there are some setting i could use but i ran out of time. */
-	 body{        
+	 body {        
 	  padding-top: 60px;
 	  padding-bottom: 40px; } */
   
