@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <title>carousel</title>
+    <style>
+        .carousel-item,
+        .carousel-inner,
+        .carousel-inner img {
+            height: 750px;
+            width: 1280px;
+        }
+
+        .carousel-item {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+
+    <div class="carousel slide mx-auto" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h1 class="carousel-caption-top text-light">Wild Cats Conservation Federation</h1>
+                <img src="images/wcscheetah.png" alt="cheetah" class="d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to our Website!</h2>
+                    <p>Click here to sign up to our newsletter</p>
+                <a class="btn btn-success" href="form.html">
+                        <h3>Newsletter</h3>
+                    </a>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <h1 class="carousel-caption-top text-light">Wild Cats Conservation Federation</h1>
+                <img src="images/panther.png" alt="cheetah" class="d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>If you want to contribute</h2>
+                    <a href="donate.html" class="btn btn-warning">Click here to Donate!</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <h1 class="carousel-caption-top text-light">Wild Cats Conservation Federation</h1>
+                <img src="images/photo-1614292132590-1c1901c902c5.jpeg" alt="cheetah" class="d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Click here to see our gallery.</h2>
+                    <a class="btn btn-info" href="gallery.html">
+                        <h3>Gallery</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class=" mx-auto">
+        <div class="col">
+            <h2 class="text-light mx-auto">We are a newstarted charitable organisation with a focus on saving wild
+                cats. </h2>
+
+        </div>
+    </div>
+    <!--redirect to mobile version-->
+    <script type="text/javascript">
+
+        if (screen.width <= 699) {
+            document.location = "index.html";
+        }
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
