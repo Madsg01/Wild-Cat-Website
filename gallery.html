@@ -5,82 +5,220 @@
   <title>Gallery</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 
-<body class="bg-dark text-light">
-
+<body class="bg-dark">
   <header>
-    <div class="fixed-header">
-      <nav class="navbar fixed-top navbar-dark bg-dark">
-        <span class="navbar-text"><a href="index.html">Main Page</a></span>
-        <span class="navbar-text"><a href="gallery.html">Gallery</a></span>
-        <span class="navbar-text"><a href="form.html">Newsletter</a></span>
-        <span class="navbar-text"><a href="donate.html">Donate</a></span>
-        <span class="navbar-text"><a href="contact.html">Contact</a></span>
-      </nav>
-    </div>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-header">
+      <a class="navbar-brand" href="#">Navigation Menu</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" style="color: turquoise" href="index.html">Main Page</a></span>
+          <li class="nav-item"><a class="nav-link" style="color: tomato" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: yellowgreen;" href="form.html">Newsletter</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: yellow;" href="donate.html">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: whitesmoke" href="contact.html">Contact</a></li>
+      </div>
+    </nav>
   </header>
-  <!--Was going to make a really expansive gallery, decided to just fill it with placeholder stock images of tigers and such due to time constraints. Had a carousel in an earlier version that diddnt look good on mobile so scrapped it.
-    Tried to make this look good on the desktop but ran out of time something made it break and it didnt allow me to add any other text to the page.-->
-  <br><br><br>
+  >
+  <br><br><br><br>
   <div class="container">
-    <div class="flex-row">
-      <div class="col-md-12">
-        <div class="col-md-4">
-          <img class="img-fluid rounded" src="images/gallery/cheetah-5689870__340.png">
-        </div>
-        <div class="col-md-4"><img class="img-fluid rounded" src="images/gallery/jaguar-1807171__340.png" alt="jaguar">
-        </div>
-        <div class="col-md-4"><img class="img-fluid rounded" src="images/gallery/leopard-400400__340.png" alt="leopard">
-        </div>
-        <div class="col-md-4">
-          <img class="img-fluid rounded" src="images/gallery/lion-341717__340.png" alt="lion">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="flex-row">
-        <div class="col-md-12">
-          <div class="col-md-4">
-            <img class="img-fluid rounded" src="images/gallery/cheetah-5689870__340.png" alt="cheetath">
-          </div>
-          <div class="col-md-4">
-            <img class="img-fluid rounded" src="images/gallery/lion-1209289__340.png" alt="lion">
-          </div>
-          <div class="col-md-4">
-            <img class="img-fluid rounded" src="images/gallery/lion-3072184__340.png" alt="lion">
-          </div>
-          <div class="col-md-4">
-            <img class="img-fluid rounded" src="images/gallery/lion-341717__340.png" alt="lion">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="flex-row">
-        <div class="col-md-12">
-          <div class="col-md-4">
-            <img class="img-fluid rounded" src="images/gallery/lion-3574819__340.png" alt="lion">
-          </div>
-          <div class="col-md-4">
-            <img class="img-fluid rounded" src="images/gallery/lion-3583963__340.png" alt="lion">
-          </div>
-          <div class="col-md-4">
-            <img class="img-fluid rounded" src="images/gallery/lion-4581841__340.png" alt="lion">
-          </div>
-          <div class="col-md-4">
-            <img class="img-fluid rounded" src="images/gallery/lynx-3334869__340.png" alt="lion">
-          </div>
-        </div>
+    <!-- Scrap the deck and put all the cards in a list inside the container, should fx it mby???-->
+    <div class="row fadedbg justify-content-center text-light">
+      <div class="col" style="text-align: center;">
+        <h1>Welcome to our gallery page!</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim excepturi pariatur
+          qui eveniet. Excepturi magni
+          officia consequuntur vitae voluptatum? Corrupti perspiciatis inventore harum quisquam reiciendis dignissimos
+          odit vero dolorum est?</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex provident deserunt autem mollitia minus
+          repellat,
+          dolores ratione blanditiis labore magnam enim voluptas asperiores! Quia, nemo esse? Molestiae provident error
+          alias!</p>
       </div>
     </div>
 
-<!--footer-->
-    <div class="fixed-footer" style="text-align: center">Wild Cats Conservation Federation - 2021 - Quick Contact:
-      info@wccfederation.xyz
-    </div>
+
+    <section id="gallery">
+
+      <div class="row justify-content-center">
+        <h2 text class="text-light">These are the Species we are focusing our efforts on, read more about one of them
+          and their current situation by clicking on one of them.</h2><button class="btn btn-dark" type="button"
+          data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false"
+          aria-controls="andean-collapsed baycat-collapsed flathead-collapsed lynx-collapsed bengal-collapsed">Collapse
+          Gallery</button>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <img class="card-img-top" src="images/andean.png" alt="andean cat">
+            <h5 class="card-title">
+              <a class="collapsed d-block" data-toggle="collapse" href="#andean-collapsed" aria-expanded="true"
+                aria-controls="andean-collapsed" id="andean-collapsed">
+
+                <span style="text-align: center">Andean Mountain Cat</span>
+              </a>
+            </h5>
+            <div id="andean-collapsed" class="collapse multi-collapse" aria-labelledby="andean-collapsed">
+              <div class="card-body">
+                <p class="card-text">
+                  The Andean cat is the most threatened felid in the Americas. Scientists estimate their total
+                  population is less than 1,400 animals and declining. Their distribution coincides with the historic
+                  range
+                  of
+                  the mountain chinchilla, which was hunted to the brink of extinction for the fur trade a century ago.
+                  Despite great concern regarding the status of the Andean cat, very little is known about its
+                  population
+                  structure, which is crucial data for appropriate management plans.</p> <a target="_blank"
+                  class="btn btn-dark" href="https://en.wikipedia.org/wiki/Andean_mountain_cat">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <img class="card-img-top" src="images/baycat.png">
+            <h5 class="card-title">
+              <a class="collapsed d-block" data-toggle="collapse" href="#baycat-collapsed" aria-expanded="true"
+                aria-controls="baycat-collapsed" id="baycat-collapsed">
+
+                <span>Borneo Bay Cat</span>
+              </a>
+            </h5>
+            <div id="baycat-collapsed" class="collapse multi-collapse" aria-labelledby="baycat-collapsed">
+              <div class="card-body">
+                <p class="card-text">
+                  The Bay Cat is found only on the island of Borneo, and appears to be widely distributed on the
+                  island. Outside of protected areas, habitat loss due to commercial logging and palm oil plantations is
+                  the
+                  main threat to the Bay Cat.<br>Wildlife traders are aware of the cat’s rarity, and they have been
+                  captured
+                  illegally from the wild for the skin and pet markets. Poaching of the cats’ prey species is a growing
+                  problem. There is legal protection of the Borneo Bay cat within Borneo, but enforcement to actually
+                  stop
+                  trade is minimal</p> <a target="_blank" href="https://en.wikipedia.org/wiki/Bay_Cat"
+                  class="btn-dark btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <img class="card-image-top" src="images/flathead.png">
+            <h5 class="card-title">
+              <a class="collapsed d-block" data-toggle="collapse" href="#flathead-collapsed" aria-expanded="true"
+                aria-controls="flathead-collapsed" id="flathead-collapsed">
+
+                <span>Flat-headed Cat</span>
+              </a>
+            </h5>
+            <div id="flathead-collapsed" class="collapse multi-collapse" aria-labelledby="flathead-collapsed">
+              <div class="card-body">
+                <p class="card-text">
+                  The flat-headed cat is primarily threatened by wetland and lowland forest destruction and
+                  degradation. Causes of this destruction include human settlement, forest transformation to
+                  plantations,
+                  draining for agriculture, pollution, and excessive hunting, wood-cutting, and fishing. In addition,
+                  clearance of coastal mangroves over the past decade has been rapid in tropical Asia. Flat-headed cats
+                  are
+                  very rare in captivity, with fewer than 10 individuals, all kept in Malaysian and Thai zoos.
+                <p><a class="btn btn-dark" target="_blank" href="https://en.wikipedia.org/wiki/Flat-headed_cat">Learn
+                    More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <img class="card-image-top" src="images/lynx.png">
+            <h5 class="card-title">
+              <a class="collapsed d-block" data-toggle="collapse" href="#lynx-collapsed" aria-expanded="true"
+                aria-controls="lynx-collapsed" id="lynx-collapsed">
+
+                <span>Iberian Lynx</span>
+              </a>
+            </h5>
+            <div id="lynx-collapsed" class="collapse multi-collapse" aria-labelledby="lynx-collapsed">
+              <div class="card-body">
+                <p class="card-text">
+                  The Iberian lynx (Lynx pardinus) is a wild cat species endemic to the Iberian Peninsula in
+                  southwestern Europe. In the 20th century, the Iberian lynx population had declined because of
+                  overhunting,
+                  poaching, fragmentation of suitable habitats, and the population decline of its main prey species, the
+                  European rabbit.</p><a class="btn btn-dark" target="_blank"
+                  href="https://en.wikipedia.org/wiki/Iberian_lynx">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <img class="card-image-top" src="images/lynx.png">
+            <h5 class="card-title">
+              <a class="collapsed d-block" data-toggle="collapse" href="#lynx-collapsed" aria-expanded="true"
+                aria-controls="lynx-collapsed" id="lynx-collapsed">
+
+                <span>Iberian Lynx</span>
+              </a>
+            </h5>
+            <div id="lynx-collapsed" class="collapse multi-collapse" aria-labelledby="lynx-collapsed">
+              <div class="card-body">
+                <p class="card-text">
+                  The Iberian lynx (Lynx pardinus) is a wild cat species endemic to the Iberian Peninsula in
+                  southwestern Europe. In the 20th century, the Iberian lynx population had declined because of
+                  overhunting,
+                  poaching, fragmentation of suitable habitats, and the population decline of its main prey species, the
+                  European rabbit.</p><a class="btn btn-dark" target="_blank"
+                  href="https://en.wikipedia.org/wiki/Iberian_lynx">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <img class="card-image-top" src="images/tiger2.png">
+            <h5 class="card-title">
+              <a class="collapsed d-block" data-toggle="collapse" href="#bengal-collapsed" aria-expanded="true"
+                aria-controls="bengal-collapsed" id="bengal-collapsed">
+
+                <span>Bengal Tiger</span>
+              </a>
+            </h5>
+            <div id="bengal-collapsed" class="collapse multi-collapse" aria-labelledby="bengal-collapsed">
+              <div class="card-body">
+                The tiger is an iconic species.In 2016, an estimate of a global wild tiger population of
+                approximately 3,890 individuals was
+                presented during the Third Asia Ministerial Conference on Tiger Conservation.The WWF subsequently
+                declared that the world's count of wild tigers had risen for the first time in a century.<a
+                  target="_blank" class="btn btn-dark" href="https://en.wikipedia.org/wiki/Bengal_tiger">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <br><br>
+
+
+
+
+
+  </section>
+
+  <!--footer-->
+  <div class="fixed-bottom bg-dark text-light" style="text-align: center">Wild Cats Conservation Federation - 2021
+  </div>
 </body>
 <!--bootstrap and jquery scripts-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

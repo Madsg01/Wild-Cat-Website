@@ -13,74 +13,63 @@
 </head>
 
 <body class="bg-dark text-light">
+  <!--navbar final version dont change this ok?-->
   <header>
-    <div class="fixed-header">
-      <nav class="navbar fixed-top navbar-dark bg-dark">
-        <span class="navbar-text"><a href="index.html">Main Page</a></span>
-        <span class="navbar-text"><a href="gallery.html">Gallery</a></span>
-        <span class="navbar-text"><a href="form.html">Newsletter</a></span>
-        <span class="navbar-text"><a href="donate.html">Donate</a></span>
-        <span class="navbar-text"><a href="contact.html">Contact</a></span>
-      </nav>
-    </div>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-header">
+      <a class="navbar-brand" href="#">Navigation Menu</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" style="color: turquoise" href="index.html">Main Page</a></span>
+          <li class="nav-item"><a class="nav-link" style="color: tomato" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: yellowgreen;" href="form.html">Newsletter</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: yellow;" href="donate.html">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: whitesmoke" href="contact.html">Contact</a></li>
+      </div>
+    </nav>
   </header>
-<!--There was going to be a button and everything but that req some js i didnt have time to learn it, manage to make it scroll right on mobile screens
+  <!--There was going to be a button and everything but that req some js i didnt have time to learn it, manage to make it scroll right on mobile screens
 Managed to add the link but org the images where the link in my earlier prototype, had to scrap it when i reimplemented it, laid focus on the mobile layout-->
-  <div class="container">
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container fadedbg">
     <div class="row">
-      <p style="text-align: center;">Since we are a newstarted project we have not gotten setup quite yet. Instead if you are interested in making a donation we rekommend choosing one of the following charities, they all do good work and have been around for a long time. </p>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="figure"><img src="images/panther.png" alt="panther" class="figure-img img-fluid rounded"></div>
-        <figcaption class="figure-caption"><a href="https://www.panthera.org/" target="_blank">Panthera</a>
-          <p>
-            Founded in 2006, Panthera is devoted to the protection of wild cats such as tigers, lions and pumas.
-            their ecosystems. Panthera teams up with cat biologists, international nongovernmental organizations, local
-            communities, governments and ordinary citizens. One of Panthera's plans, Tigers Forevers hopes to increase
-            the
-            Asian tiger population in select locations by 50 percent in 10 years and calls for monitoring tigers to
-            prevent
-            poaching, among other strategies.</p>
-        </figcaption>
-      </div>
-      <div class="col-md-2">
-        <div class="figure"><img src="images/wcscheetah.png" alt="Cheetah" class="figure-img img-fluid rounded"></div>
-        <figcaption class="figure-caption"><a href="https://www.wildcatsanctuary.org/" target="_blank">Wild Cats
-            Sanctuary</a>
-          <p> Wildcat Sanctuary in Sandstone, Minn. provides a haven for wild cats in need and
-            works to change Americans
-            attitudes about these animals. Unfortunately, many people who buy big cats for the sake of entertainment
-            find
-            out
-            quickly that they are unable to care properly for these animals and end up sending them to sanctuaries. TWS
-            acts
-            as
-            a no-kill nonprofit that provides a refuge for the rest of the cat's life. This sanctuary, unlike others, is
-            not
-            open to the public.</p>
-        </figcaption>
-      </div>
-      <div class="col-md-2">
-        <div class="figure"><img src="images/tiger2.png" alt="tigers" class="figure-img img-fluid rounded"></div>
-        <figcaption class="figure-caption"><a href="https://www.wcs.org/our-work/wildlife/big-cats" target="_blank">Wildlife Conservation Society: Big
-          Cats</a>
-          <p>Wildlife Big Cats is a subgroup of the Wildlife Conservation Society focused on saving
-            wildlife and wild places
-            through science, education and conservation and by inspiring individuals about the value of big cats. The main
-            cats it focuses on are tigers and lions, because they have suffered the highest amount of losses due to illegal
-            poaching. WCS believes that breeding helps with the preserving and
-            recover process for endangered species.</p>
-        </figcaption>
+      <div class="col">
+        <h1>This is our Contributions page.</h1>
       </div>
     </div>
-<!--footer -->
-  </div>
-  <div class="bg-dark text-center">
-    Wild Cats Conservation Federation - 2021 - Quick Contact: info@wccfederation.xyz
+    <div class="row justify-content-center">
+      <div class="col">
+        <form>
+          <ul style="list-style: none;">
+            <li><button class="btn btn-dark" data-dollars="5">5$</button></li>
+            <li><button class="btn btn-dark" data-dollars="25">25$</button></li>
+            <li><button class="btn btn-dark" data-dollars="50">50$</button></li>
+            <li><button class="btn btn-dark" data-dollars="100">100$</button></li>
+            <li><button class="btn btn-dark" data-dollars="500">500$</button></li>
+          </ul>
+
+
+
+        </form>
+
+      </div>
+      <div class="col"><p>Working on this form atm.</p></div>
+    </div>
   </div>
 
-  
+  <!--footer fix it so it doesnt cut off the content of the page-->
+  <div class="bg-dark text-center fixed-footer">
+    Wild Cats Conservation Federation - 2021
+  </div>
+
+
 </body>
 <!--Bootstrap scripts, doubt they are req but i used an extension to generate the skeleton template for these pages-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
