@@ -92,8 +92,8 @@ p {
 .fixed-header {
 	z-index: 2;
 }
-/*
-.nsbutton {
-	color: yellowgreen;
-	border: 2px solid yellowgreen;
-} */
+/* newsletter form */
+
+button {width:50%;}
+
+#email {width:100%;}
