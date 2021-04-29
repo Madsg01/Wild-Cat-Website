@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 
   <title>Donate to any of these.</title>
@@ -27,7 +28,6 @@
           <li class="nav-item"><a class="nav-link" style="color: tomato" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" style="color: yellowgreen;" href="form.html">Newsletter</a></li>
           <li class="nav-item"><a class="nav-link" style="color: yellow;" href="donate.html">Donate</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: whitesmoke" href="contact.html">Contact</a></li>
       </div>
     </nav>
   </header>
@@ -36,38 +36,115 @@ Managed to add the link but org the images where the link in my earlier prototyp
 
   <br>
   <br>
-  <br>
-  <br>
-  <div class="container fadedbg">
-    <div class="row">
-      <div class="col">
-        <h1>This is our Contributions page.</h1>
+<br>
+  <div class="container-fluid fadedbg">
+    <div class="row justify-content-center">
+      <div class="col" style="text-align: center;">
+        <h1>Donate Page</h1>
+        <p>If you want to contribute you can do so by using the form bellow.</p>
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col">
-        <form>
-          <ul style="list-style: none;">
-            <li><button class="btn btn-dark" data-dollars="5">5$</button></li>
-            <li><button class="btn btn-dark" data-dollars="25">25$</button></li>
-            <li><button class="btn btn-dark" data-dollars="50">50$</button></li>
-            <li><button class="btn btn-dark" data-dollars="100">100$</button></li>
-            <li><button class="btn btn-dark" data-dollars="500">500$</button></li>
-          </ul>
-
-
-
+      <div class="col" style="text-align: center;">
+        <form action="#donatemodal">
+          <label for="amount">Amount (In US dollars $)</label>
+          <input id="amount" type="type" required>
+          <button type="submit" data-toggle="modal" data-target="#donatemodal">Donate</button>
         </form>
-
+        
+        <!-- alternate form if i cant get the modal to work, atm dissregards the ammount.         
+          <form action="nsconfim.html">
+          <label for="amount">Amount (In US dollars $)</label>
+          <input id="amount" type="type" required>
+          <button type="submit">Donate</button> -->
+        </form>
       </div>
-      <div class="col"><p>Working on this form atm.</p></div>
     </div>
   </div>
 
+
+  <!-- Modal -->
+  <div class="modal fade" style="color:black;" id="donatemodal" tabindex="0" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h3>Thank you, fill out this form to continue.</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <form action="nsconfim.html" id="ccform">
+                <fieldset class="col">
+                  <legend>
+                    Personal Information:
+                  </legend>
+                  <label>Your Name</label>
+                  <input type="text" class="form-control" required>
+                  <label>Your email</label>
+                  <input type="email" class="form-control" required>
+                  <label>Address</label>
+                  <input type="text" class="form-control" required>
+                  <label>City, State, Zip Code</label>
+                  <input type="text" class="form-control" required>
+                </fieldset>
+                <fieldset class="col">
+                  <legend>
+                    Credit Card Information:
+                  </legend>
+                  <label for="card-number">Credit Card Number</label>
+                  <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="form-control card-number"
+                    id="card-number" required>
+                  <label for="card-number">Expiration Date</label>
+                  <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="form-control card-expiration"
+                    id="card-expiration" required>
+                  <label for="card-number">CVV Number</label>
+                  <input placeholder="CVV" pattern="[0-9]*" type="text" class="form-control card-cvv" id="card-cvv"
+                    required>
+                  <label for="card-number">Billing Zip Code</label>
+                  <input placeholder="ZIP" pattern="[0-9]*" type="text" class="form-control card-zip" id="card-zip"
+                    required>
+                </fieldset>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+          <button type="submit" class="btn-dark" for="#ccform">Continue</button>
+        </div>
+        </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
+
+
   <!--footer fix it so it doesnt cut off the content of the page-->
-  <div class="bg-dark text-center fixed-footer">
-    Wild Cats Conservation Federation - 2021
-  </div>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col bg-dark text-center text-light">
+        Wild Cats Conservation Federation - 2021
+      </div>
+      <div class="col">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank">
+              <i class="fa fa-2x fa-instagram" aria-hidden="true" placeholder="@realWCCF"></i><a></li>
+          <li class="list-inline-item">
+          <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank"><i
+                class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></li>
+          <li class="list-inline-item"><a href="">
+              <i class="fa fa-2x fa-envelope-o" aria-hidden="true" target="_blank" placeholder="telephone number"></i>
+            </a></li>
+          <li class="list-inline-item"><a href="">
+              <i class="fa fa-3x fa-mobile" aria-hidden="true" target="_blank" placerholder="telephone number"></i>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
 
 </body>

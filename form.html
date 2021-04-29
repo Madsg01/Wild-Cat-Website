@@ -27,7 +27,6 @@
           <li class="nav-item"><a class="nav-link" style="color: tomato" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" style="color: yellowgreen;" href="form.html">Newsletter</a></li>
           <li class="nav-item"><a class="nav-link" style="color: yellow;" href="donate.html">Donate</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: whitesmoke" href="contact.html">Contact</a></li>
       </div>
     </nav>
   </header>
@@ -36,8 +35,8 @@
   <br>
   <br>
   <br>
-  <div class="container fadedbg">
-  
+  <div class="container-fluid fadedbg">
+
     <div class="row justify-content-center">
       <h1 style="text-align: center;">This is the page for signing up to our newsletter!</h1>
     </div>
@@ -45,50 +44,73 @@
     <div class="row justify-content-center">
       <!-- newsletter Signup.-->
 
-      <form id="nsform">
-        <div class="input-group mb-3">
+      <form id="nsform" action="nsconfim.html" class="container">
+        <div class="input-group mb-3 row">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputName">Name</span>
           </div>
-          <input type="text" class="form-control" aria-describedby="inputName">
+          <input type="text" class="form-control" aria-describedby="inputName" required>
         </div>
-        <div class="input-group">
+        <div class="input-group mb-3 row">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputEmail">Email</span>
           </div>
-          <input type="email" class="form-control" aria-describedby="inputName">
+          <input type="email" class="form-control" aria-describedby="inputName" required>
         </div>
-        <div>
-          <a href="nsconfim.html" class="btn btn-dark">Sign Up</a>
-          <a href="form.html" class="btn btn-secondary">Reset</a>
+        <div class="row">
+          <button type="submit" class="btn btn-dark col-6">Submit</button>
+          <button type="reset" class="btn btn-light col-6">Reset</button>
         </div>
+
       </form>
 
     </div>
     <br>
     <div>
-    <div class="row justify-content-center">
-      <h2 style="text-align: center;">Keep up to date with our work it comes our semi monthly on the 31st.</h2>
-      <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ea quis, unde id,
-        quod voluptas voluptates porro non quibusdam distinctio magni asperiores atque incidunt cumque recusandae eos
-        iste doloremque? Repellat!</p>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col" style="text-align: center;">
-        <h3>Some more content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti amet at fugiat, ea
-          eius, odit, reiciendis culpa id minima officiis sit magni dignissimos hic non saepe perspiciatis vero. Illum,
-          deleniti!</h3>
-        <p>If you would like to donate click <a href="donate.html" class="btn btn-dark">here</a> or browse our gallery
-          by clicking <a href="gallery" class="btn btn-dark">here.</a></p>
+      <div class="row justify-content-center">
+        <h2 style="text-align: center;">Keep up to date with our work it comes our semi monthly on the 31st.</h2>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ea quis, unde
+          id,
+          quod voluptas voluptates porro non quibusdam distinctio magni asperiores atque incidunt cumque recusandae eos
+          iste doloremque? Repellat!</p>
       </div>
-    </div></div>
+      <div class="row justify-content-center">
+        <div class="col" style="text-align: center;">
+          <h3>Some more content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti amet at fugiat, ea
+            eius, odit, reiciendis culpa id minima officiis sit magni dignissimos hic non saepe perspiciatis vero.
+            Illum,
+            deleniti!</h3>
+          <p>If you would like to donate click <a href="donate.html" class="btn btn-dark">here</a> or browse our gallery
+            by clicking <a href="gallery" class="btn btn-dark">here.</a></p>
+        </div>
+      </div>
+    </div>
     <!--newsletter ending-->
   </div>
   <!--footer-->
 
-  <div class="bg-dark text-center text-light fixed-bottom">
-    Wild Cats Conservation Federation - 2021
-  </div>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col bg-dark text-center text-light">
+        Wild Cats Conservation Federation - 2021
+      </div>
+      <div class="col">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank">
+              <i class="fa fa-2x fa-instagram" aria-hidden="true" placeholder="@realWCCF"></i><a></li>
+          <li class="list-inline-item">
+          <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank"><i
+                class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></li>
+          <li class="list-inline-item"><a href="">
+              <i class="fa fa-2x fa-envelope-o" aria-hidden="true" target="_blank" placeholder="telephone number"></i>
+            </a></li>
+          <li class="list-inline-item"><a href="">
+              <i class="fa fa-3x fa-mobile" aria-hidden="true" target="_blank" placerholder="telephone number"></i>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
   <!--contact info card, fitting them next to the footer is the goal-->
 
