@@ -2,23 +2,19 @@
 <html>
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-  <title>Donate to any of these.</title>
+  <title>Donation page.</title>
 </head>
-
 <body class="bg-dark text-light">
-  <!--navbar final version dont change this ok?-->
+  <!--Navigation Menu-->
   <header>
-    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-header">
-      <a class="navbar-brand" href="#">Navigation Menu</a>
-
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+      <a class="navbar-brand" href="#">Menu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,13 +27,7 @@
       </div>
     </nav>
   </header>
-  <!--There was going to be a button and everything but that req some js i didnt have time to learn it, manage to make it scroll right on mobile screens
-Managed to add the link but org the images where the link in my earlier prototype, had to scrap it when i reimplemented it, laid focus on the mobile layout-->
-
-  <br>
-  <br>
-<br>
-  <div class="container-fluid fadedbg">
+  <div class="container-fluid fadedbg0">
     <div class="row justify-content-center">
       <div class="col" style="text-align: center;">
         <h1>Donate Page</h1>
@@ -51,7 +41,6 @@ Managed to add the link but org the images where the link in my earlier prototyp
           <input id="amount" type="type" required>
           <button type="submit" data-toggle="modal" data-target="#donatemodal">Donate</button>
         </form>
-        
         <!-- alternate form if i cant get the modal to work, atm dissregards the ammount.         
           <form action="nsconfim.html">
           <label for="amount">Amount (In US dollars $)</label>
@@ -61,8 +50,6 @@ Managed to add the link but org the images where the link in my earlier prototyp
       </div>
     </div>
   </div>
-
-
   <!-- Modal -->
   <div class="modal fade" style="color:black;" id="donatemodal" tabindex="0" role="dialog"
     aria-labelledby="myModalLabel" aria-hidden="true">
@@ -117,12 +104,7 @@ Managed to add the link but org the images where the link in my earlier prototyp
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
-
-
-
-
-
-  <!--footer fix it so it doesnt cut off the content of the page-->
+  <!--footer -->
   <footer class="container-fluid">
     <div class="row">
       <div class="col bg-dark text-center text-light">
@@ -145,10 +127,7 @@ Managed to add the link but org the images where the link in my earlier prototyp
       </div>
     </div>
   </footer>
-
-
 </body>
-<!--Bootstrap scripts, doubt they are req but i used an extension to generate the skeleton template for these pages-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

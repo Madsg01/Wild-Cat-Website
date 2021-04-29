@@ -13,10 +13,10 @@
 
 
 <body class="bg-dark">
+  <!--Navigation Menu-->
   <header>
-    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-header">
-      <a class="navbar-brand" href="#">Navigation Menu</a>
-
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+      <a class="navbar-brand" href="#">Menu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,10 +29,8 @@
       </div>
     </nav>
   </header>
-
-  <br><br><br><br>
+  <!--content-->
   <div class="container">
-    <!-- Scrap the deck and put all the cards in a list inside the container, should fx it mby???-->
     <div class="row fadedbg justify-content-center text-light">
       <div class="col" style="text-align: center;">
         <h1>Welcome to our gallery page!</h1>
@@ -46,10 +44,8 @@
           alias!</p>
       </div>
     </div>
-
-
+    <!--gallery, collapsable cards-->
     <section id="gallery">
-
       <div class="row justify-content-center">
         <h2 text class="text-light">These are the Species we are focusing our efforts on, read more about one of them
           and their current situation by clicking on one of them.</h2><button class="btn btn-dark" type="button"
@@ -64,7 +60,6 @@
             <h5 class="card-title">
               <a class="collapsed d-block" data-toggle="collapse" href="#andean-collapsed" aria-expanded="true"
                 aria-controls="andean-collapsed" id="andean-collapsed">
-
                 <span style="text-align: center">Andean Mountain Cat</span>
               </a>
             </h5>
@@ -90,7 +85,6 @@
             <h5 class="card-title">
               <a class="collapsed d-block" data-toggle="collapse" href="#baycat-collapsed" aria-expanded="true"
                 aria-controls="baycat-collapsed" id="baycat-collapsed">
-
                 <span>Borneo Bay Cat</span>
               </a>
             </h5>
@@ -117,7 +111,6 @@
             <h5 class="card-title">
               <a class="collapsed d-block" data-toggle="collapse" href="#flathead-collapsed" aria-expanded="true"
                 aria-controls="flathead-collapsed" id="flathead-collapsed">
-
                 <span>Flat-headed Cat</span>
               </a>
             </h5>
@@ -143,7 +136,6 @@
             <h5 class="card-title">
               <a class="collapsed d-block" data-toggle="collapse" href="#lynx-collapsed" aria-expanded="true"
                 aria-controls="lynx-collapsed" id="lynx-collapsed">
-
                 <span>Iberian Lynx</span>
               </a>
             </h5>
@@ -166,7 +158,6 @@
             <h5 class="card-title">
               <a class="collapsed d-block" data-toggle="collapse" href="#lynx-collapsed" aria-expanded="true"
                 aria-controls="lynx-collapsed" id="lynx-collapsed">
-
                 <span>Iberian Lynx</span>
               </a>
             </h5>
@@ -189,7 +180,6 @@
             <h5 class="card-title">
               <a class="collapsed d-block" data-toggle="collapse" href="#bengal-collapsed" aria-expanded="true"
                 aria-controls="bengal-collapsed" id="bengal-collapsed">
-
                 <span>Bengal Tiger</span>
               </a>
             </h5>
@@ -207,38 +197,29 @@
       </div>
   </div>
   </div>
-
-  <br><br>
-
-
-
-
-
   </section>
-
-  <!--footer-->
-  <footer class="container-fluid">
-    <div class="row">
-      <div class="col bg-dark text-center text-light">
-        Wild Cats Conservation Federation - 2021
-      </div>
-      <div class="col">
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank">
-              <i class="fa fa-2x fa-instagram" aria-hidden="true" placeholder="@realWCCF"></i><a></li>
-          <li class="list-inline-item">
-          <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank"><i
-                class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></li>
-          <li class="list-inline-item"><a href="">
-              <i class="fa fa-2x fa-envelope-o" aria-hidden="true" target="_blank" placeholder="telephone number"></i>
-            </a></li>
-          <li class="list-inline-item"><a href="">
-              <i class="fa fa-3x fa-mobile" aria-hidden="true" target="_blank" placerholder="telephone number"></i>
-            </a></li>
-        </ul>
-      </div>
+ <!--footer-->
+ <footer class="container-fluid" placerholder="footer">
+  <div class="row">
+    <div class="col bg-dark text-light">
+      Wild Cats Conservation Federation - 2021
     </div>
-  </footer>
+    <div class="col">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank">
+            <i class="fa fa-2x fa-instagram" aria-hidden="true" placeholder="instagram"></i><a></li>
+        <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank"><i
+              class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></li>
+        <li class="list-inline-item"><a href="">
+            <i class="fa fa-2x fa-envelope-o" aria-hidden="true" target="_blank" placeholder="telephone number"></i>
+          </a></li>
+        <li class="list-inline-item"><a href="">
+            <i class="fa fa-3x fa-mobile" aria-hidden="true" target="_blank" placerholder="telephone number"></i>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
 </body>
 <!--bootstrap and jquery scripts-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
