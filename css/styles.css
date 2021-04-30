@@ -97,3 +97,7 @@ p {
 button {width:50%;}
 
 #email {width:100%;}
+
+/* Modals*/
+
+#newsmodal, #donatemodal {color: black;}
