@@ -92,12 +92,19 @@ p {
 .fixed-header {
 	z-index: 2;
 }
+
 /* newsletter form */
 
-button {width:50%;}
+button {
+	width: 50%;
+}
 
-#email {width:100%;}
+#email {
+	width: 100%;
+}
 
 /* Modals*/
 
-#newsmodal, #donatemodal {color: black;}
+#newsmodal, #donatemodal {
+	color: black;
+}
