@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Wild Cats Conservation Federation</title>
   <meta charset="utf-8">
@@ -10,8 +11,9 @@
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+
 <body class="bg-dark">
-<!--Navigation Menu-->
+  <!--Navigation Menu-->
   <header>
     <nav class="navbar navbar-dark navbar-expand-md bg-dark">
       <a class="navbar-brand" href="#">Menu</a>
@@ -27,7 +29,7 @@
       </div>
     </nav>
   </header>
-<!--Content Start-->
+  <!--Content Start-->
   <div class="container-fluid text-light">
     <!--Sectoon 0 Tile-->
     <div class="row justify-content-center fadedbg0" id="title" placeholder="Site title">
@@ -48,10 +50,13 @@
         <h3>Our Work.</h3>
         <p>Since we are a newly started group we are currently in the beginning stages and are currently working on
           securing partnerships and funding.</p>
-        <a href="form.html" class="btn newsbtn">Newsletter</a>
+        <p>Every month we put out a newsletter.</p>
+        <button type="submit" data-toggle="modal" data-target="#newsmodal" class="btn newsbtn"
+          label="newsletter">Newsletter</button>
         <p>Keep up to date with our progress by subscribing to our newsletter.</p>
       </div>
     </div>
+
     <br>
     <!--Section 2-->
     <div class="row justify-content-center fadedbg2">
@@ -59,7 +64,7 @@
         <h3>The Animals</h3>
         <p>We intend to focus our conservation efforts on some of the most endageded precies. We have selected five of
           them for the beginning stage of our project and they will be our main focus for the first year.</p>
-        <a href="gallery.html" class="btn gallerybtn">Gallery</a>
+        <a href="gallery.html" class="btn gallerybtn" type="button">Gallery</a>
         <p>Check out our gallery for futher information about them and our staff.</p>
       </div>
     </div>
@@ -68,12 +73,104 @@
     <div class="row justify-content-center fadedbg3">
       <div class="col">
         <h3>Consider Donating</h3>
-        <p>Conservation efforts take manpower but most importantly they require funds.</p><a href="donate.html"
-          class="btn donatebtn">Donate</a>
-        <p>If you would like to contribute with either visit our donation page.</p>
+        <p>Conservation efforts take manpower but most importantly they require funds. 
+        <p>If you would like to contribute with either visit our donation page.</p><button type="submit" data-toggle="modal" data-target="#donatemodal" class="btn donatebtn"
+        label="newsletter">Donate</button>
       </div>
     </div>
   </div>
+
+  <!--Modal for the newsletter.-->
+  <div class="modal fade" style="color:black;" id="newsmodal" tabindex="0" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h3>Thank you, fill out this form to continue.</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <form action="confirm1.html" id="newsform">
+                <fieldset class="col">
+                  <legend>
+                    Personal Information:
+                  </legend>
+                  <label>Your Name</label>
+                  <input type="text" class="form-control" required>
+                  <label>Your email</label>
+                  <input type="email" class="form-control" required>
+                </fieldset>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+          <button type="submit" class="btn-dark" for="#newsform">Continue</button>
+        </div>
+        </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <!--Modal for the donate button-->
+  <div class="modal fade" style="color:black;" id="donatemodal" tabindex="0" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h3>Thank you, fill out this form to continue.</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <form action="confirm2.html" id="ccform">
+                <fieldset class="col">
+                  <label>Ammount</label>
+                  <input type="number" class="form-control" required>
+                </fieldset>
+                <fieldset class="col">
+                  <legend>
+                    Personal Information:
+                  </legend>
+                  <label>Your Name</label>
+                  <input type="text" class="form-control" required>
+                  <label>Your email</label>
+                  <input type="email" class="form-control" required>
+                  <label>Address</label>
+                  <input type="text" class="form-control" required>
+                  <label>City, State, Zip Code</label>
+                  <input type="text" class="form-control" required>
+                </fieldset>
+                <fieldset class="col">
+                  <legend>
+                    Credit Card Information:
+                  </legend>
+                  <label for="card-number">Credit Card Number</label>
+                  <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="form-control card-number"
+                    id="card-number" required>
+                  <label for="card-number">Expiration Date</label>
+                  <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="form-control card-expiration"
+                    id="card-expiration" required>
+                  <label for="card-number">CVV Number</label>
+                  <input placeholder="CVV" pattern="[0-9]*" type="text" class="form-control card-cvv" id="card-cvv"
+                    required>
+                  <label for="card-number">Billing Zip Code</label>
+                  <input placeholder="ZIP" pattern="[0-9]*" type="text" class="form-control card-zip" id="card-zip"
+                    required>
+                </fieldset>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+          <button type="submit" class="btn-dark" for="#ccform">Continue</button>
+        </div>
+        </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
   <!--footer-->
   <footer class="container-fluid" placerholder="footer">
     <div class="row">
@@ -104,4 +201,5 @@
   integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </html>

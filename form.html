@@ -34,19 +34,63 @@
     <div class="row justify-content-center">
       <h1 style="text-align: center;">Sign up to our Newsletter:</h1>
     </div>
-    <!-- Newsletter Form -->
-    <form id="nsform" action="confirm1.html" placerholder="newsletter form">
+    <!-- Newsletter Form 
+    <form id="nsform" action="#newsmodal" placerholder="newsletter form">
       <input type="email" class="input-group-text px-1 justify-content-center" id="email" aria-describedby="inputemail" placeholder="Enter your Email Adress here!" required>
       <button type="submit" class="btn btn-dark my-2">Submit</button>
       <button type="reset" class="btn btn-light my-2">Reset</button>
-    </form>
+    </form> -->
     <div class="row">
       <div class="col">
+        <p>Subscribing to our newsletter is the best way to keep up to date with us.</p>
         <h2>You will receive montly updates from us on our progress.</h2>
+        <button type="submit" data-toggle="modal" data-target="#newsmodal">Newsletter</button>
         <h3>It is sent out on the 31st of each month.</h3>
       </div>
     </div>
   </div>
+  
+  
+<!--Modal for the newsletter.-->
+<div class="modal fade" style="color:black;" id="newsmodal" tabindex="0" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h3>Thank you, fill out this form to continue.</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <form action="confirm1.html" id="newsform">
+                <fieldset class="col">
+                  <legend>
+                    Personal Information:
+                  </legend>
+                  <label>Your Name</label>
+                  <input type="text" class="form-control" required>
+                  <label>Your email</label>
+                  <input type="email" class="form-control" required>
+                </fieldset>
+                <fieldset class="col">
+                  
+                </fieldset>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+          <button type="submit" class="btn-dark" for="#newsform">Continue</button>
+        </div>
+        </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
+
   <!--footer-->
   <footer class="container-fluid" placerholder="footer">
     <div class="row">
