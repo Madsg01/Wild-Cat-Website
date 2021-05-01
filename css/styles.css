@@ -22,6 +22,16 @@
 
 /* Styling for all the text, fonts etc */
 
+/* Nav links */
+
+.homenav {color: turquoise;}
+
+.gallerynav {color:tomato;}
+
+.newsnav {color: yellowgreen;}
+
+.donatenav {color:yellow;}
+
 /* Buttons */
 
 .homebtn {
