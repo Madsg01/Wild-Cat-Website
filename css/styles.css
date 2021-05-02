@@ -20,23 +20,39 @@
 	background-size: cover;
 }
 
+/* sizing the footer and header */
+
+.footerfix {max-height: 142px;}
+
+.headerfix
+
+
+
 /* Styling for all the text, fonts etc */
 
 /* Nav links */
 
-.homenav {color: turquoise;}
+.homenav {
+	color: turquoise;
+}
 
-.gallerynav {color:tomato;}
+.gallerynav {
+	color: tomato;
+}
 
-.newsnav {color: yellowgreen;}
+.newsnav {
+	color: yellowgreen;
+}
 
-.donatenav {color:yellow;}
+.donatenav {
+	color: yellow;
+}
 
 /* Buttons */
 
 .homebtn {
 	color: turquoise;
-	border-color: turquoise
+	border-color: turquoise;
 }
 
 .homebtn:hover {

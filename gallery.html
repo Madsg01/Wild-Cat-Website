@@ -14,7 +14,6 @@
 <body class="bg-dark">
   <!--Navigation Menu-->
   <header>
-
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
       <a class="navbar-brand" href="#">Menu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
@@ -22,13 +21,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav">
-          <li class="nav-item"><button onclick="document.location='index.html'"
-              class="homenav btn-link bg-dark">Home</button></li>
-          <li class="nav-item"><button onclick="document.localion='gallery.html'"
-              class="gallerynav btn-link bg-dark">Gallery</button></li>
-          <li class=""><button class="btn-link newsnav bg-dark" type="button" data-toggle="modal"
+          <li class="nav-item"><button onclick="document.location='index.html'" class="">Home</button></li>
+          <li class="nav-item"><a href="gallery.html" class="gallerynav btn">Gallery</a></li>
+          <li class=""><button class="btn newsnav bg-dark" type="button" data-toggle="modal"
               data-target="#newsmodal">Newsletter</button></li>
-          <li class="nav-item"><button class="donatenav btn-link bg-dark" type="button" data-toggle="modal"
+          <li class="nav-item"><button class="donatenav btn bg-dark" type="button" data-toggle="modal"
               data-target="#donatemodal">Donate</button></li>
         </ul>
       </div>
@@ -36,7 +33,7 @@
   </header>
   <!--content-->
   <div class="container-fluid">
-    <div class="row justify-content-center text-light fadedbg0">
+    <div class="row justify-content-center text-light">
       <div class="col">
         <h1>Welcome to our gallery.</h1>
         <p>The following speices of cat is on the top the list as the five most endagnedred in the world.
@@ -47,263 +44,268 @@
       </div>
     </div>
     <!--gallery, collapsable cards-->
-      <div class="row justify-content-center">
-        <div class="col-6">
-          <div class="card">
-            <img class="card-img-top" src="images/andean.png" alt="Andean cat">
-            <h5 class="card-title">
-              <a class="collapsed d-block" data-toggle="collapse" href="#andean-collapsed" aria-expanded="true"
-                aria-controls="andean-collapsed">
-                <span style="text-align: center">Andean Mountain Cat</span>
-              </a>
-            </h5>
-            <div id="andean-collapsed" class="collapse multi-collapse" aria-labelledby="andean-collapsed">
-              <div class="card-body">
-                <p class="card-text">
-                  The Andean cat is the most threatened felid in the Americas. Scientists estimate their total
-                  population is less than 1,400 animals and declining. Their distribution coincides with the historic
-                  range
-                  of
-                  the mountain chinchilla, which was hunted to the brink of extinction for the fur trade a century
-                  ago.
-                  Despite great concern regarding the status of the Andean cat, very little is known about its
-                  population
-                  structure, which is crucial data for appropriate management plans.</p> <a target="_blank"
-                  class="btn btn-dark" href="https://en.wikipedia.org/wiki/Andean_mountain_cat">Learn More</a>
-              </div>
+    <div class="row justify-content-center">
+      <div class="row my-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="images/andean.png" alt="Andean cat">
+          <h5 class="card-title">
+            <a class="collapsed d-block" data-toggle="collapse" href="#andean-collapsed" aria-expanded="true"
+              aria-controls="andean-collapsed">
+              <span style="text-align: center">Andean Mountain Cat</span>
+            </a>
+          </h5>
+          <div id="andean-collapsed" class="collapse" aria-labelledby="andean-collapsed">
+            <div class="card-body">
+              <p class="card-text">
+                The Andean cat is the most threatened felid in the Americas. Scientists estimate their total
+                population is less than 1,400 animals and declining. Their distribution coincides with the historic
+                range
+                of
+                the mountain chinchilla, which was hunted to the brink of extinction for the fur trade a century
+                ago.
+                Despite great concern regarding the status of the Andean cat, very little is known about its
+                population
+                structure, which is crucial data for appropriate management plans.</p> <a target="_blank"
+                class="btn btn-dark" href="https://en.wikipedia.org/wiki/Andean_mountain_cat">Learn More</a>
             </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="card">
-            <img class="card-img-top" src="images/baycat.png" alt="borneo bay cat">
-            <h5 class="card-title">
-              <a class="collapsed d-block" data-toggle="collapse" href="#baycat-collapsed" aria-expanded="true"
-                aria-controls="baycat-collapsed">
-                <span>Borneo Bay Cat</span>
-              </a>
-            </h5>
-            <div id="baycat-collapsed" class="collapse multi-collapse" aria-labelledby="baycat-collapsed">
-              <div class="card-body">
-                <p class="card-text">
-                  The Bay Cat is found only on the island of Borneo, and appears to be widely distributed on the
-                  island. Outside of protected areas, habitat loss due to commercial logging and palm oil plantations
-                  is
-                  the
-                  main threat to the Bay Cat.<br>Wildlife traders are aware of the cat’s rarity, and they have been
-                  captured
-                  illegally from the wild for the skin and pet markets. Poaching of the cats’ prey species is a
-                  growing
-                  problem. There is legal protection of the Borneo Bay cat within Borneo, but enforcement to actually
-                  stop
-                  trade is minimal</p> <a target="_blank" href="https://en.wikipedia.org/wiki/Bay_Cat"
-                  class="btn-dark btn">Learn More</a>
-              </div>
+      </div>
+      <div class="row my-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="images/baycat.png" alt="borneo bay cat">
+          <h5 class="card-title">
+            <a class="collapsed d-block" data-toggle="collapse" href="#baycat-collapsed" aria-expanded="true"
+              aria-controls="baycat-collapsed">
+              <span>Borneo Bay Cat</span>
+            </a>
+          </h5>
+          <div id="baycat-collapsed" class="collapse" aria-labelledby="baycat-collapsed">
+            <div class="card-body">
+              <p class="card-text">
+                The Bay Cat is found only on the island of Borneo, and appears to be widely distributed on the
+                island. Outside of protected areas, habitat loss due to commercial logging and palm oil plantations
+                is
+                the
+                main threat to the Bay Cat.<br>Wildlife traders are aware of the cat’s rarity, and they have been
+                captured
+                illegally from the wild for the skin and pet markets. Poaching of the cats’ prey species is a
+                growing
+                problem. There is legal protection of the Borneo Bay cat within Borneo, but enforcement to actually
+                stop
+                trade is minimal</p> <a target="_blank" href="https://en.wikipedia.org/wiki/Bay_Cat"
+                class="btn-dark btn">Learn More</a>
             </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="card">
-            <img class="card-image-top" src="images/flathead.png" alt="flatheaded cat">
-            <h5 class="card-title">
-              <a class="collapsed d-block" data-toggle="collapse" href="#flathead-collapsed" aria-expanded="true"
-                aria-controls="flathead-collapsed">
-                <span>Flat-headed Cat</span>
-              </a>
-            </h5>
-            <div id="flathead-collapsed" class="collapse multi-collapse" aria-labelledby="flathead-collapsed">
-              <div class="card-body">
-                <p class="card-text">
-                  The flat-headed cat is primarily threatened by wetland and lowland forest destruction and
-                  degradation. Causes of this destruction include human settlement, forest transformation to
-                  plantations,
-                  draining for agriculture, pollution, and excessive hunting, wood-cutting, and fishing. In addition,
-                  clearance of coastal mangroves over the past decade has been rapid in tropical Asia. Flat-headed
-                  cats
-                  are
-                  very rare in captivity, with fewer than 10 individuals, all kept in Malaysian and Thai zoos.
-                <p><a class="btn btn-dark" target="_blank" href="https://en.wikipedia.org/wiki/Flat-headed_cat">Learn
-                    More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="card">
-            <img class="card-image-top" src="images/lynx.png" alt="Iberian lynx">
-            <h5 class="card-title">
-              <a class="collapsed d-block" data-toggle="collapse" href="#lynx-collapsed" aria-expanded="true"
-                aria-controls="lynx-collapsed">
-                <span>Iberian Lynx</span>
-              </a>
-            </h5>
-            <div id="lynx-collapsed" class="collapse multi-collapse" aria-labelledby="lynx-collapsed">
-              <div class="card-body">
-                <p class="card-text">
-                  The Iberian lynx (Lynx pardinus) is a wild cat species endemic to the Iberian Peninsula in
-                  southwestern Europe. In the 20th century, the Iberian lynx population had declined because of
-                  overhunting,
-                  poaching, fragmentation of suitable habitats, and the population decline of its main prey species,
-                  the
-                  European rabbit.</p><a class="btn btn-dark" target="_blank"
-                  href="https://en.wikipedia.org/wiki/Iberian_lynx">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="card">
-            <img class="card-image-top" src="images/tiger2.png" alt="Bengal tiger">
-            <h5 class="card-title">
-              <a class="collapsed d-block" data-toggle="collapse" href="#bengal-collapsed" aria-expanded="true"
-                aria-controls="bengal-collapsed">
-                <span>Bengal Tiger</span>
-              </a>
-            </h5>
-            <div id="bengal-collapsed" class="collapse multi-collapse" aria-labelledby="bengal-collapsed">
-              <div class="card-body">
-                The tiger is an iconic species.In 2016, an estimate of a global wild tiger population of
-                approximately 3,890 individuals was
-                presented during the Third Asia Ministerial Conference on Tiger Conservation.The WWF subsequently
-                declared that the world's count of wild tigers had risen for the first time in a century.<a
-                  target="_blank" class="btn btn-dark" href="https://en.wikipedia.org/wiki/Bengal_tiger">Learn
+      </div>
+      <div class="row my-4">
+        <div class="card h-100">
+          <img class="card-image-top" src="images/flathead.png" alt="flatheaded cat">
+          <h5 class="card-title">
+            <a class="collapsed d-block" data-toggle="collapse" href="#flathead-collapsed" aria-expanded="true"
+              aria-controls="flathead-collapsed">
+              <span>Flat-headed Cat</span>
+            </a>
+          </h5>
+          <div id="flathead-collapsed" class="collapse" aria-labelledby="flathead-collapsed">
+            <div class="card-body">
+              <p class="card-text">
+                The flat-headed cat is primarily threatened by wetland and lowland forest destruction and
+                degradation. Causes of this destruction include human settlement, forest transformation to
+                plantations,
+                draining for agriculture, pollution, and excessive hunting, wood-cutting, and fishing. In addition,
+                clearance of coastal mangroves over the past decade has been rapid in tropical Asia. Flat-headed
+                cats
+                are
+                very rare in captivity, with fewer than 10 individuals, all kept in Malaysian and Thai zoos.
+              <p><a class="btn btn-dark" target="_blank" href="https://en.wikipedia.org/wiki/Flat-headed_cat">Learn
                   More</a>
-              </div>
             </div>
           </div>
         </div>
       </div>
-  </div>
-  <!--Modal for the newsletter.-->
-  <div class="modal fade" id="newsmodal" tabindex="0" role="dialog" aria-labelledby="newsmodal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h3>Sign up to our newsletter using this form!</h3>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col">
-              <form action="confirm1.html" id="newsform">
-                <fieldset class="col">
-                  <legend>
-                    Personal Information:
-                  </legend>
-                  <label>Your Name</label>
-                  <input type="text" class="form-control" required>
-                  <label>Your email</label>
-                  <input type="email" class="form-control" required>
-                </fieldset>
-                <button type="submit" class="btn-dark" for="#newsform">Sign up</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
-              </form>
+      <div class="row my-4">
+        <div class="card h-100">
+          <img class="card-image-top" src="images/lynx.png" alt="Iberian lynx">
+          <h5 class="card-title">
+            <a class="collapsed d-block" data-toggle="collapse" href="#lynx-collapsed" aria-expanded="true"
+              aria-controls="lynx-collapsed">
+              <span>Iberian Lynx</span>
+            </a>
+          </h5>
+          <div id="lynx-collapsed" class="collapse" aria-labelledby="lynx-collapsed">
+            <div class="card-body">
+              <p class="card-text">
+                The Iberian lynx (Lynx pardinus) is a wild cat species endemic to the Iberian Peninsula in
+                southwestern Europe. In the 20th century, the Iberian lynx population had declined because of
+                overhunting,
+                poaching, fragmentation of suitable habitats, and the population decline of its main prey species,
+                the
+                European rabbit.</p><a class="btn btn-dark" target="_blank"
+                href="https://en.wikipedia.org/wiki/Iberian_lynx">Learn More</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!--Modal for the donate button-->
-  <div class="modal fade" id="donatemodal" tabindex="0" role="dialog" aria-labelledby="donatemodal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h3>Thank you, fill out this form to continue.</h3>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col">
-              <form action="confirm2.html" id="ccform">
-                <fieldset class="col">
-                  <label>Amount (in USD$)</label>
-                  <input type="number" class="form-control" required>
-                </fieldset>
-                <fieldset class="col">
-                  <legend>
-                    Personal Information:
-                  </legend>
-                  <label>Your Name</label>
-                  <input type="text" class="form-control" required>
-                  <label>Your email</label>
-                  <input type="email" class="form-control" required>
-                  <label>Address</label>
-                  <input type="text" class="form-control" required>
-                  <label>City, State, Zip Code</label>
-                  <input type="text" class="form-control" required>
-                </fieldset>
-                <fieldset class="col">
-                  <legend>
-                    Credit Card Information:
-                  </legend>
-                  <label for="card-number">Credit Card Number</label>
-                  <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="form-control card-number"
-                    id="card-number" required>
-                  <label for="card-number">Expiration Date</label>
-                  <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="form-control card-expiration"
-                    id="card-expiration" required>
-                  <label for="card-number">CVV Number</label>
-                  <input placeholder="CVV" pattern="[0-9]*" type="text" class="form-control card-cvv" id="card-cvv"
-                    required>
-                  <label for="card-number">Billing Zip Code</label>
-                  <input placeholder="ZIP" pattern="[0-9]*" type="text" class="form-control card-zip" id="card-zip"
-                    required>
-                </fieldset>
-                <button type="submit" class="btn-dark" for="#ccform">Continue</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
-              </form>
+      <div class="row my-4">
+        <div class="card h-100">
+          <img class="card-image-top" src="images/tiger2.png" alt="Bengal tiger">
+          <h5 class="card-title">
+            <a class="collapsed d-block" data-toggle="collapse" href="#bengal-collapsed" aria-expanded="true"
+              aria-controls="bengal-collapsed">
+              <span>Bengal Tiger</span>
+            </a>
+          </h5>
+          <div id="bengal-collapsed" class="collapse" aria-labelledby="bengal-collapsed">
+            <div class="card-body">
+              The tiger is an iconic species.In 2016, an estimate of a global wild tiger population of
+              approximately 3,890 individuals was
+              presented during the Third Asia Ministerial Conference on Tiger Conservation.The WWF subsequently
+              declared that the world's count of wild tigers had risen for the first time in a century.<a
+                target="_blank" class="btn btn-dark" href="https://en.wikipedia.org/wiki/Bengal_tiger">Learn
+                More</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--Modal for the Contact Form-->
-  <div class="modal fade" id="contactmodal" tabindex="0" role="dialog" aria-labelledby="contactmodal"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <p>Fill out this form if you have any questions. We will respond within a week.</p>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col">
-              <form action="confirm3.html" id="contactform">
-                <fieldset class="col">
-                  <label>Name</label>
-                  <input type="text" class="form-control" required>
-                  <label>Email</label>
-                  <input type="email" class="form-control" required>
-                  <label>Question</label>
-                  <textarea class="form-control" placeholder="Write you question here!" required></textarea>
-                </fieldset>
-                <button type="submit" class="btn-dark" for="#contactform">Submit</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
-              </form>
-            </div>
+
+<!--Modal for the newsletter.-->
+<div class="modal fade" id="newsmodal" tabindex="0" role="dialog" aria-labelledby="newsmodal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h3>Sign up to our newsletter using this form!</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <form action="confirm1.html" id="newsform">
+              <fieldset class="col">
+                <legend>
+                  Personal Information:
+                </legend>
+                <label>Your Name</label>
+                <input type="text" class="form-control" required>
+                <label>Your email</label>
+                <input type="email" class="form-control" required>
+              </fieldset>
+              <button type="submit" class="btn-dark my-2">Sign up</button>
+              <button type="button" class="btn btn-default my-2" data-dismiss="modal">Back</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--End of modal section-->
+</div>
+<!--Modal for the donate button-->
+<div class="modal fade" id="donatemodal" tabindex="0" role="dialog" aria-labelledby="newsmodal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h3>Thank you, fill out this form to continue.</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <form action="confirm2.html" id="ccform">
+              <fieldset class="col">
+                <label>Amount (in USD$)</label>
+                <input type="number" class="form-control" required>
+              </fieldset>
+              <fieldset class="col">
+                <legend>
+                  Personal Information:
+                </legend>
+                <label>Your Name</label>
+                <input type="text" class="form-control" required>
+                <label>Your email</label>
+                <input type="email" class="form-control" required>
+                <label>Address</label>
+                <input type="text" class="form-control" required>
+                <label>City, State, Zip Code</label>
+                <input type="text" class="form-control" required>
+              </fieldset>
+              <fieldset class="col">
+                <legend>
+                  Credit Card Information:
+                </legend>
+                <label for="card-number">Credit Card Number</label>
+                <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="form-control card-number"
+                  id="card-number" required>
+                <label for="card-number">Expiration Date</label>
+                <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="form-control card-expiration"
+                  id="card-expiration" required>
+                <label for="card-number">CVV Number</label>
+                <input placeholder="CVV" pattern="[0-9]*" type="text" class="form-control card-cvv" id="card-cvv"
+                  required>
+                <label for="card-number">Billing Zip Code</label>
+                <input placeholder="ZIP" pattern="[0-9]*" type="text" class="form-control card-zip" id="card-zip"
+                  required>
+              </fieldset>
+              <button type="submit" class="btn-dark my-2">Continue</button>
+              <button type="button" class="btn btn-default my-2" data-dismiss="modal">Back</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal for the Contact Form-->
+<div class="modal fade" id="contactmodal" tabindex="0" role="dialog" aria-labelledby="contactmodal"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h3>Fill out this form if you have any questions. We will respond within a week.
+        </h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <form action="confirm3.html" id="contactform">
+              <fieldset class="col">
+                <label>Name</label>
+                <input type="text" class="form-control" required>
+                <label>Email</label>
+                <input type="email" class="form-control" required>
+                <label>Question</label>
+                <textarea class="form-control" placeholder="Write you question here!" required></textarea>
+              </fieldset>
+              <button type="submit" class="btn-dark my-2">Submit</button>
+              <button type="button" class="btn btn-default my-2" data-dismiss="modal">Back</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End of modal section-->
+
   <!--footer-->
-  <footer class="container-fluid">
-    <div class="row fadedbg1">
-      <div class="col text-light">
-        <p>
-          Wild Cats Conservation Federation - 2021</p>
-        <p>Sources:</p>
-        <p>https://news.mongabay.com/2017/09/the-worlds-5-most-endangered-wild-cats/</p>
-        <p>https://www.wikipedia.org</p>
-      </div>
-      <div class="col">
-        <ul class="list-inline">
-          <li>
-            <p class="text-light">Contact us by using this form:</p><button type="button" data-toggle="modal"
-              data-target="#contactmodal" class="btn btn-outline-light">Contact Form.</button>
-          </li>
-        </ul>
+  <footer class="pt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col text-light">
+          <p>
+            Wild Cats Conservation Federation - 2021</p>
+          <p>Sources:</p>
+          <p>https://news.mongabay.com/2017/09/the-worlds-5-most-endangered-wild-cats/</p>
+          <p>https://www.wikipedia.org</p>
+        </div>
+        <div class="col">
+          <ul class="list-inline">
+            <li>
+              <p class="text-light">Contact us by using this form:</p><button type="button" data-toggle="modal"
+                data-target="#contactmodal" class="btn btn-outline-light">Contact Form.</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
