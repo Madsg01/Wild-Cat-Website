@@ -1,3 +1,9 @@
+/* Preventing overflow */
+
+body {
+	overflow-x: hidden;
+}
+
 /*background images, used a gradient to make the white text more visible*/
 
 .fadedbg0 {
@@ -64,7 +70,6 @@
 .donatenav {
 	color: yellow;
 }
-
 
 /* Styling classes for the buttons on the main page. */
 
