@@ -15,7 +15,9 @@ The first and most important aspect of a charity is the donation page. Since we 
 
 At first i had different pages for all the button, if you clicked donate it would take you to a separate page. I had trouble populating these pages with information and it also caused alot of uncessesary bloat so i decided that making them modal elements would be better.
 
-User stories: As a person looking for a suitable charity i want to get information on what type of work the organisation does. 
+**User stories:**
+
+As a person looking for a suitable charity i want to get information on what type of work the organisation does. 
 
 I also want a place to donate. If i decide to make a contribution to the organisation i want that process to be as clear and easy to understand as possible. 
 
@@ -23,24 +25,26 @@ I want to be able to recive updates on the organisations ongoing efforts.
 
 I want to be able to access information and to be able to make contact with the people behind the project easily. 
 
-Link to wireframe.
+**Wireframes**
 
+Here are some wireframes
+
+<a href="docs/wireframes/indexwireframe.pdf">Wireframe for the main page</a>
+
+<a href="docs/wireframes/gallerywireframe.pdf">Wirefram for the Gallery</a>
 ## Features
 
 ### Existing Features
 
-Feature one - Donation button/form. A place where one can make donations is available on every page and sits in the navigation bar at the top of the page. 
+**Feature one** - Donation button/form. A place where one can make donations is available on every page and sits in the navigation bar at the top of the page. 
 
-Feature two - Newsletter signup form. Same as the above, if a user finds themselves interessted in the project a button to signup to our newsletter. 
+**Feature two** - Newsletter signup form. Same as the above, if a user finds themselves interessted in the project a button to signup to our newsletter. 
 
-Feature three - Gallery. An easily expandable gallery is available to acces from the menu and proves insight on the different animals the organisation is targeting and some light information about them. The page also directs users to some more heavy reading they can do elsewhere on the internet. It just takes them to the wikipedia article for each species but i decided that this would be sufficent. 
+**Feature three** - Gallery. An easily expandable gallery is available to acces from the menu and proves insight on the different animals the organisation is targeting and some light information about them. The page also directs users to some more heavy reading they can do elsewhere on the internet. It just takes them to the wikipedia article for each species but i decided that this would be sufficent. 
 
-Feature four. Contactt form. If one wished to get in touch with us they are provided with a form in the footer section on every page. Allows users to fill out a contact form.
+**Feature four** - Contact form. If one wished to get in touch with us they are provided with a form in the footer section on every page. Allows users to fill out a contact form.
 
-Additional Feature. Expanding the gallery section to include additional information and having a video section. Also a section where perhaphs people can vote on different cat species they want us to work with, like an intergrated strawpol. 
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
+**Additional Feature** Expanding the gallery section to include additional information and having a video section. Also a section where perhaphs people can vote on different cat species they want us to work with. Also some kind of payment system needs to be integrated to the donation form. Currently all the forms are just for show and doesnt actually do anything with your information. Api ingration for all the form is numberone thing to fix before adding additional features.  
 
 ## Technologies used in this project
 
@@ -65,6 +69,7 @@ If you dont fill it out correctly it will tell you as so:
 And if you fill out the form it will take you to a small confirmation page as so:
 
 <img src="docs/images/donatetest1.png">
+(note only these two pictures are full sized the others are small, i don't know why i unfortunaly don't have time to fix it i am sorry.)
 
 **Newsletter form** Same as the above. Takes you to a confirmation page if you fill it out, doesnt let you pass otherwise. 
 
@@ -90,7 +95,6 @@ Look and feel across media platforms. The navbar changed based on your screen si
 
 <img src="docs/images/ipadprolook.png">
 
-
 This look is retained across all the pages (since the code is the same).
 
 Problems/bugs. I had alot of trouble making the gallery. I wanted images that would expand when you click on them. As seen here: <img src="docs/images/gallerycollapsed.png">  The card class i found difficult to work with. I could not get it to look the way i wanted and also have the cards resize on small screen. I went through many different looks as i experiented with bootstraps different card classes. Ultimately i had to accept i could not get it to look good across devices and still retain the functionaly that i wanted. 
@@ -104,14 +108,16 @@ Ultimately there are no actual bugs as of writing this. All the functionally wor
 
 I used Github Pages to deployt my site. There are no diffrences between versions. I use VScode debugging functionally to open a chrome instance to view it locally.
 
-Credits
-Content
+## Credits
 
-The information where in most part taken from this article: 
+
+### Content
+
+The factual information on the gallery where in most part taken from this article: 
  
 https://news.mongabay.com/2017/09/the-worlds-5-most-endangered-wild-cats/
 
-along with some information sources from the indivudal wikipedia article from each species of cat, links to all the articles:
+along with some information from the indivudal wikipedia article from each species of cat, links to all the articles:
 
 https://en.wikipedia.org/wiki/Andean_mountain_cat
 https://en.wikipedia.org/wiki/Bay_cat
@@ -119,7 +125,7 @@ https://en.wikipedia.org/wiki/Flat-headed_cat
 https://en.wikipedia.org/wiki/Iberian_lynx
 https://en.wikipedia.org/wiki/Bengal_tiger
 
-## Media:
+### Media:
 
 **Images** where mainly sourced from https://www.unsplash.com/ with a few from wikipedia.org (Cats on the gallery).
 
