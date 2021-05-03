@@ -3,7 +3,9 @@
 
 ## Overview
 
-I decided to make a charity website. For inspiration i though if i had a charity what would it be centered on? Well i really like big cats, like tiger and such. I remembered going to the zoo and watching them feed the lions, it was awsome. I would be a shame if there where to come a point in time where was no longer possible. In future i would like to go on saffari and when i do i would like there to be some lion and tigers there. As such i decided that the conservation of wild cat species would be the subject of my website project. 
+I decided to make a charity website. For inspiration i though if i had a charity what would it be centered on? Well i really like big cats, like tiger and such. 
+
+The wild cat population is shrinking drasticly and when i grow old i would like to still be able to go on saffari and see tigers and such in the wild. As such i decided that the conservation of wild cat species would be the subject of my website project. 
 
 
 
@@ -99,10 +101,9 @@ This look is retained across all the pages (since the code is the same).
 
 Problems/bugs. I had alot of trouble making the gallery. I wanted images that would expand when you click on them. As seen here: <img src="docs/images/gallerycollapsed.png">  The card class i found difficult to work with. I could not get it to look the way i wanted and also have the cards resize on small screen. I went through many different looks as i experiented with bootstraps different card classes. Ultimately i had to accept i could not get it to look good across devices and still retain the functionaly that i wanted. 
 
+ I tried alot of implementations but i am now out of time. One solutions is to have plain pictures with a titles and have them act as buttons for modals that then display the text content but i have now run out of time and cannot unfortunalty implement this. 
+
 Footer and header. I went though something similar here. Alhough this problem i could fix. I wanted the header to be fixed but with a fixed-top class it did not push the content below it. Fixed that by adding some top margin to the content below it. The footer was also a sticky at one point but i found that it served no other purpose then to take up space on the screen, was a little to much on smaller devices. 
-
-Ultimately there are no actual bugs as of writing this. All the functionally works as it should.
-
 
 ## Deployment
 
