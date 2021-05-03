@@ -1,6 +1,6 @@
-/* Preventing overflow */
+/* Preventing overflow on the homepage. Tried some different solutions for the gallery but they all broke formatting. */
 
-body {
+.indexbody {
 	overflow-x: hidden;
 }
 
@@ -25,30 +25,11 @@ body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/jungleleopard.png");
 	background-size: cover;
 }
+/*Formatting for the gallery cards tried lots of things but did not find a method to prevent the overflow in time and still retain the content.  */
 
-/* Gallery Images */
-
-.fadea {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/junglecat1.png");
-}
-
-.fadedtiger {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ;
-	background-size: cover;
-}
-
-.card {
-	display: flex;
-	max-height: 480px;
-	max-width: 640px;
-}
-
-/* sizing the footer and header */
-
-.bottomfooter {
-	position: fixed;
-	bottom: 10px;
-	width: 100%;
+.card { 
+	color: black;
+	
 }
 
 /* Styling for all the text, fonts etc */
