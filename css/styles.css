@@ -108,30 +108,14 @@ p {
 	font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.container {
-	width: 100%;
-	margin: 0 auto;
-}
 
-.fixed-header, .fixed-footer {
-	width: 100%;
-	position: fixed;
-	padding: 10px 0
-}
 
-.fixed-header {
-	z-index: 2;
-}
-
-/* newsletter form */
+/* making the buttons a bit wider, think it looks better */
 
 button {
 	width: 50%;
 }
 
-#email {
-	width: 100%;
-}
 
 /* Modals*/
 
