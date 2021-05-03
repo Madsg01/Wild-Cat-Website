@@ -47,7 +47,7 @@
 
 /* Styling for all the text, fonts etc */
 
-/*Coloring the Nav links */
+/*Coloring for the the Nav linls */
 
 .homenav {
 	color: turquoise;
@@ -65,10 +65,6 @@
 	color: yellow;
 }
 
-.btn {font-size: 100%;
-border: 0;
-padding: 0;
-font-family: inherit;}
 
 /* Styling classes for the buttons on the main page. */
 
