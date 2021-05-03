@@ -1,69 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
+
 <head>
-  <title>Donation Confirmation.</title>
+  <title>Thank you for donating</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body class="bg-dark text-light">
+
+<body class="bg-dark">
   <!--Navigation Menu-->
   <header>
-    <nav class="navbar navbar-dark navbar-expand-md">
+    <nav class="navbar navbar-dark navbar-expand-xl bg-dark">
       <a class="navbar-brand" href="#">Menu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" style="color: turquoise" href="index.html">Main Page</a></span>
-          <li class="nav-item"><a class="nav-link" style="color: tomato" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: yellowgreen;" href="form.html">Newsletter</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: yellow;" href="donate.html">Donate</a></li>
+          <li class="nav-item"><button onclick="document.location='index.html'"
+              class="homenav btn bg-dark">Home</button></li>
+          <li class="nav-item"><a href="gallery.html" class="gallerynav btn">Gallery</a></li>
+          <li class=""><button class="btn newsnav bg-dark" type="button" data-toggle="modal"
+              data-target="#newsmodal">Newsletter</button></li>
+          <li class="nav-item"><button class="donatenav btn bg-dark" type="button" data-toggle="modal"
+              data-target="#donatemodal">Donate</button></li>
+        </ul>
       </div>
     </nav>
-    <!--Start of content-->
-    <div class="container-fluid fadedbg0">
+  </header>
+  <!--Start of content-->
+  <div class="container-fluid text-light">
+    <div class="row justify-content-center">
+      <h1>Thank You for Donating</h1>
+    </div>
+    <div class="row justify-content-center">
+      <p>These kinds of projects are very resource consuming so your contribution is most welcome.</p>
       <div class="row justify-content-center">
-        <h1>Thank You for Donating</h1>
-      </div>
-      <div class="row justify-content-center">
-        <p>Check out or gallery if you have not already:</p>
-      </div>
-      <div class="row justify-content-center">
-        <a class="btn gallerybtn" href="gallery.html" role="button" placerholder="gallery button">Gallery</a>
+        <div class="col-lg-6">
+          <p>If you have not already may we suggest sining up to our newsletter?</p>
+          <button type="button" data-toggle="modal" data-target="#newsmodal"
+            class="btn newsbtn my-4">Newsletter</button>
+        </div>
+        <div class="col-lg-6">
+          <p>Also feel free to check out our gallery page if you have not already.</p>
+          <button onclick="location.href='gallery.html'" class="btn gallerybtn my-4">Gallery</button>
+        </div>
       </div>
     </div>
-    <!--footer-->
-    <footer class="container-fluid">
+  </div>
+  <!--Modal Section-->
+  <!--Newsletter modal-->
+  <div class="modal fade" id="newsmodal" tabindex="0" role="dialog" aria-labelledby="newsmodal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h3>Sign up to our newsletter using this form!</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <form action="confirm1.html" id="newsform">
+                <fieldset class="col">
+                  <legend>
+                    Personal Information:
+                  </legend>
+                  <label>Your Name</label>
+                  <input type="text" class="form-control" required>
+                  <label>Your email</label>
+                  <input type="email" class="form-control" required>
+                </fieldset>
+                <button type="submit" class="btn-dark my-2">Sign up</button>
+                <button type="button" class="btn btn-default my-2" data-dismiss="modal">Back</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal for the donate button-->
+  <div class="modal fade" id="donatemodal" tabindex="0" role="dialog" aria-labelledby="newsmodal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h3>Thank you, fill out this form to continue.</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <form action="confirm2.html" id="ccform">
+                <fieldset class="col">
+                  <label>Amount (in USD$)</label>
+                  <input type="number" class="form-control" required>
+                </fieldset>
+                <fieldset class="col">
+                  <legend>
+                    Personal Information:
+                  </legend>
+                  <label>Your Name</label>
+                  <input type="text" class="form-control" required>
+                  <label>Your email</label>
+                  <input type="email" class="form-control" required>
+                  <label>Address</label>
+                  <input type="text" class="form-control" required>
+                  <label>City, State, Zip Code</label>
+                  <input type="text" class="form-control" required>
+                </fieldset>
+                <fieldset class="col">
+                  <legend>
+                    Credit Card Information:
+                  </legend>
+                  <label for="card-number">Credit Card Number</label>
+                  <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="form-control card-number"
+                    id="card-number" required>
+                  <label for="card-number">Expiration Date</label>
+                  <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="form-control card-expiration"
+                    id="card-expiration" required>
+                  <label for="card-number">CVV Number</label>
+                  <input placeholder="CVV" pattern="[0-9]*" type="text" class="form-control card-cvv" id="card-cvv"
+                    required>
+                  <label for="card-number">Billing Zip Code</label>
+                  <input placeholder="ZIP" pattern="[0-9]*" type="text" class="form-control card-zip" id="card-zip"
+                    required>
+                </fieldset>
+                <button type="submit" class="btn-dark my-2">Continue</button>
+                <button type="button" class="btn btn-default my-2" data-dismiss="modal">Back</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal for the Contact Form-->
+  <div class="modal fade" id="contactmodal" tabindex="0" role="dialog" aria-labelledby="contactmodal"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h3>Fill out this form if you have any questions. We will respond within a week.
+          </h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <form action="confirm3.html" id="contactform">
+                <fieldset class="col">
+                  <label>Name</label>
+                  <input type="text" class="form-control" required>
+                  <label>Email</label>
+                  <input type="email" class="form-control" required>
+                  <label>Question</label>
+                  <textarea class="form-control" placeholder="Write you question here!" required></textarea>
+                </fieldset>
+                <button type="submit" class="btn-dark my-2">Submit</button>
+                <button type="button" class="btn btn-default my-2" data-dismiss="modal">Back</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of modal section-->
+
+  <!--footer-->
+  <footer class="pt-4 bottomfooter">
+    <div class="container">
       <div class="row">
-        <div class="col bg-dark text-center text-light">
-          Wild Cats Conservation Federation - 2021
+        <div class="col text-light">
+          <p>
+            Wild Cats Conservation Federation - 2021</p>
+          <p>Sources:</p>
+          <p>https://news.mongabay.com/2017/09/the-worlds-5-most-endangered-wild-cats/</p>
+          <p>https://www.wikipedia.org</p>
         </div>
         <div class="col">
           <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank">
-                <i class="fa fa-2x fa-instagram" aria-hidden="true" placeholder="instagram"></i><a></li>
-            <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank" placerholder="twitter"><i
-                  class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></li>
-            <li class="list-inline-item"><a href="">
-                <i class="fa fa-2x fa-envelope-o" aria-hidden="true" target="_blank" placeholder="email"></i>
-              </a></li>
-            <li class="list-inline-item"><a href="">
-                <i class="fa fa-3x fa-mobile" aria-hidden="true" target="_blank" placerholder="phonenumber"></i>
-              </a></li>
+            <li>
+              <p class="text-light">Contact us by using this form:</p><button type="button" data-toggle="modal"
+                data-target="#contactmodal" class="btn btn-outline-light">Contact Form.</button>
+            </li>
           </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+  <!--bootstrap and jquery scripts-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </html>

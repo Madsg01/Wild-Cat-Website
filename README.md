@@ -1,8 +1,7 @@
-Your Project's Name
 
 Wild Cats Conservation Federation Website.
 
-One or two paragraphs providing an overview of your project.
+Overview
 
 On this project i decided to make a charity website. I did not have any particular idea but i recently saw a documentary on wild cats and how endangered they where so that is where is got the inspiratio, i guess. I have never been good at this kind of stuff. Even as i sit here at 1:39 i am not happy but it is no use thinking about at this point i have about 60 hours left to get this done, minus sleep. 
 
@@ -11,7 +10,8 @@ If i was going to make something i thought it would be something that would atle
 Essentially, this part is your sales pitch.
 
 UX
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+
+This website is for anyone looking for a charity specificly targeting cat rescue/conservation. 
 
 Design process. I looked at several other charity websites that focus on the conservation of wild cats and saw what things they had. The first and most important aspect of a charity is the donation page. Since we are trying to raise money for a cause i determined that this was the number one most important part. A big button that says donate on every page. 
 
@@ -27,58 +27,76 @@ In particular, as part of this section we recommend that you provide a list of U
 
 Link to wireframe. Link to user story. 
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
 Features
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
 Existing Features
 
-Feature one - Donation Button/form. Accessing the form to where one can make a contribution is possible everywhere as it is embeded in the navigational menu that sticks to the top of the page. 
+Feature one - Donation button/form. A place where one can make donations is available on every page and sits in the navigation bar at the top of the page. 
 
-Feature two - newsletter signup form. Same as the above, if a user finds themselves interessted in the project a button to signup to our newsletter can easily be acceses in the
+Feature two - Newsletter signup form. Same as the above, if a user finds themselves interessted in the project a button to signup to our newsletter. 
 
-Feature three - Gallery. Here is a section where people can see pictures of and get information on the animals and the staff. There are pictures and when you click on them they fold out and give you some information about a particular animal.
+Feature three - Gallery. An easily expandable gallery is available to acces from the menu and proves insight on the different animals the organisation is targeting and some light information about them. The page also directs users to some more heavy reading they can do elsewhere on the internet. It just takes them to the wikipedia article for each species but i decided that this would be sufficent. 
 
-Additional features. 
+Feature four. Contactt form. If one wished to get in touch with us they are provided with a form in the footer section on every page. Allows users to fill out a contact form.
 
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
+Additional Feature. Expanding the gallery section to include additional information and having a video section. Also a section where perhaphs people can vote on different cat species they want us to work with, like an intergrated strawpol. 
+
 For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
-Features Left to Implement
-Another feature idea
-Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+Technologies used in this project. 
 
-I used bootstrap framework for simplicity and to ease the time contraints. I did not have alot of time so i used the framework to ease on the amount of ccs that i needed to write. 
+For this project i used VScode as my editor. 
+https://code.visualstudio.com/. VScode is has wide functionally. I used a bootstrap extension to autogenerate the templates with a simple !bscn,although i found later on that the template did not pass the w3c validation. Still saved me from having to copy paste the scripts from their website. Link to extension: https://marketplace.visualstudio.com/items?itemName=eventyret.bootstrap-4-cdn-snippet
 
-JQuery
-The project uses JQuery to simplify DOM manipulation.
 
+Libraries/frameworks.
+
+Bootstrap version 4.1. https://www.getbootstrap.com. It provided a simple way to speed up development and made it easier to make the site look good across media platform. Also made it possible to have the submission forms as modals instead of them being their own separate pages.
+
+Jquery. The project uses JQuery to simplify DOM manipulation. Bootstrap 4 also uses jquery for some of it's functionality. The extent of its use is limited but allow the form functionaly to work properly.
 
 Testing
 
-Donate form works. Doesn't let you continue unitl you have filled out all the required fields. Although it does not connect to an external api that can process donations so for now it is just for show. Works as intended have tested it extensivly manually. 
+Donate form. Doesn't let you continue unitl you have filled out all the required fields. Although it does not connect to an external api that can process donations so for now it is just for show. 
 
-Signing up to the newsletter works as it should although the case for this one is the same as the one above. 
+If you dont fill it out correctly it will tell you as so: 
 
-Gallery the gallery section looks good on all devices and the links work.
+<img src="docs/images/donatetest1.png">
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+And if you fill out the form it will take you to a small confirmation page as so:
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+<img src="docs/images/donatetest1.png">
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+Newsletter form. Same as the above. Takes you to a confirmation page if you fill it out, doesnt let you pass otherwise. 
 
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
+<img src="docs/images/newslettertest1.png"> 
+
+And if you fill it out corretly it takes you here: 
+
+<img src="docs/images/newslettertest2.png">
+
+Contact form. Works the same as the other two. Doesn't let you pass until you fill out all the fields. 
+
+<img src="docs/images/contacttest1.png">
+
+And here is the page you will see after making a valid submission:
+
+<img src="docs/images/contacttest2.png">
+
+Gallery. The gallery proves you with pictures of cats. If you click on one you will be presented with a couple of paragrafs on detailing threats facing them along with a button that takes you to their wikipedia article.
+
+Look and feel across media platforms. The navbar changed based on your screen size i used a bootstrap class nav-bar-expand-xl for this as this required me to automate and not have to incorporate media queries in my css file. xl covered all cases from the smallest phone up to the largest tablet on the chrome devtool, the ipad pro. 
+
+<img src="docs/images/ipadprolook">
+
+This look is retained across all the pages (since the code is the same).
+
+Problems/bugs. I had alot of trouble making the gallery look good. The card class i found difficult to work with. 
+
+
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.

@@ -1,4 +1,4 @@
-/*background images */
+/*background images, used a gradient to make the white text more visible*/
 
 .fadedbg0 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/waterfalls.png");
@@ -11,7 +11,7 @@
 }
 
 .fadedbg2 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/junglepanther.jpeg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/junglepanther.png");
 	background-size: cover;
 }
 
@@ -20,13 +20,30 @@
 	background-size: cover;
 }
 
+/* Gallery Images */
+
+.fadea {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/junglecat1.png");
+}
+
+.fadedtiger {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ;
+	background-size: cover;
+}
+
+.card {
+	display: flex;
+	max-height: 480px;
+	max-width: 640px;
+}
+
 /* sizing the footer and header */
 
-.footerfix {max-height: 142px;}
-
-.headerfix
-
-
+.bottomfooter {
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
+}
 
 /* Styling for all the text, fonts etc */
 
@@ -48,7 +65,7 @@
 	color: yellow;
 }
 
-/* Buttons */
+/* Styling classes for the buttons on the main page. */
 
 .homebtn {
 	color: turquoise;
@@ -101,7 +118,7 @@ h1, h2, h3 {
 }
 
 p {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container {

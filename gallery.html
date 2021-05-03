@@ -14,7 +14,7 @@
 <body class="bg-dark">
   <!--Navigation Menu-->
   <header>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-dark navbar-expand-xl bg-dark">
       <a class="navbar-brand" href="#">Menu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -45,15 +45,14 @@
     </div>
     <!--gallery, collapsable cards-->
     <div class="row justify-content-center">
-      <div class="row my-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="images/andean.png" alt="Andean cat">
-          <h5 class="card-title">
-            <a class="collapsed d-block" data-toggle="collapse" href="#andean-collapsed" aria-expanded="true"
-              aria-controls="andean-collapsed">
-              <span style="text-align: center">Andean Mountain Cat</span>
-            </a>
-          </h5>
+      <div class="card-columns text-light">
+        <div class="card">
+          <a class="collapsed d-flex text-light" data-toggle="collapse" href="#andean-collapsed"
+          aria-expanded="true" aria-controls="andean-collapsed">
+          <img class="card-image-top" src="images/andean.png">
+          <h1 class="card-img-overlay">
+            Andean Mountain Cat</h1>
+        </a>
           <div id="andean-collapsed" class="collapse" aria-labelledby="andean-collapsed">
             <div class="card-body">
               <p class="card-text">
@@ -70,16 +69,13 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row my-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="images/baycat.png" alt="borneo bay cat">
-          <h5 class="card-title">
-            <a class="collapsed d-block" data-toggle="collapse" href="#baycat-collapsed" aria-expanded="true"
-              aria-controls="baycat-collapsed">
-              <span>Borneo Bay Cat</span>
-            </a>
-          </h5>
+        <div class="card">
+          <a class="collapsed d-flex text-light" data-toggle="collapse" href="#baycat-collapsed"
+          aria-expanded="true" aria-controls="baycat-collapsed">
+          <img class="card-image-top" src="images/baycat.png">
+          <h2 class="card-img-overlay">
+            Borneo Bay Cat</h2>
+        </a>
           <div id="baycat-collapsed" class="collapse" aria-labelledby="baycat-collapsed">
             <div class="card-body">
               <p class="card-text">
@@ -98,16 +94,13 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row my-4">
-        <div class="card h-100">
-          <img class="card-image-top" src="images/flathead.png" alt="flatheaded cat">
-          <h5 class="card-title">
-            <a class="collapsed d-block" data-toggle="collapse" href="#flathead-collapsed" aria-expanded="true"
-              aria-controls="flathead-collapsed">
-              <span>Flat-headed Cat</span>
-            </a>
-          </h5>
+        <div class="card">
+          <a class="collapsed d-flex text-light" data-toggle="collapse" href="#flathead-collapsed"
+          aria-expanded="true" aria-controls="flathead-collapsed">
+          <img class="card-image-top" src="images/flathead.png">
+          <h2 class="card-img-overlay">
+            Flat-headed cat</h2>
+        </a>
           <div id="flathead-collapsed" class="collapse" aria-labelledby="flathead-collapsed">
             <div class="card-body">
               <p class="card-text">
@@ -124,168 +117,162 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row my-4">
-        <div class="card h-100">
+        <div class="card">
+        <a class="collapsed d-flex text-light" data-toggle="collapse" href="#lynx-collapsed"
+          aria-expanded="true" aria-controls="lynx-collapsed">
           <img class="card-image-top" src="images/lynx.png" alt="Iberian lynx">
-          <h5 class="card-title">
-            <a class="collapsed d-block" data-toggle="collapse" href="#lynx-collapsed" aria-expanded="true"
-              aria-controls="lynx-collapsed">
-              <span>Iberian Lynx</span>
-            </a>
-          </h5>
-          <div id="lynx-collapsed" class="collapse" aria-labelledby="lynx-collapsed">
-            <div class="card-body">
-              <p class="card-text">
-                The Iberian lynx (Lynx pardinus) is a wild cat species endemic to the Iberian Peninsula in
-                southwestern Europe. In the 20th century, the Iberian lynx population had declined because of
-                overhunting,
-                poaching, fragmentation of suitable habitats, and the population decline of its main prey species,
-                the
-                European rabbit.</p><a class="btn btn-dark" target="_blank"
-                href="https://en.wikipedia.org/wiki/Iberian_lynx">Learn More</a>
-            </div>
+          <h2 class="card-img-overlay">
+            Iberian Lynx</h2>
+        </a>
+        <div id="lynx-collapsed" class="collapse" aria-labelledby="lynx-collapsed">
+          <div class="card-body">
+            <p class="card-text">
+              The Iberian lynx (Lynx pardinus) is a wild cat species endemic to the Iberian Peninsula in
+              southwestern Europe. In the 20th century, the Iberian lynx population had declined because of
+              overhunting,
+              poaching, fragmentation of suitable habitats, and the population decline of its main prey species,
+              the
+              European rabbit.</p><a class="btn btn-dark" target="_blank"
+              href="https://en.wikipedia.org/wiki/Iberian_lynx">Learn More</a>
           </div>
         </div>
       </div>
-      <div class="row my-4">
-        <div class="card h-100">
-          <img class="card-image-top" src="images/tiger2.png" alt="Bengal tiger">
-          <h5 class="card-title">
-            <a class="collapsed d-block" data-toggle="collapse" href="#bengal-collapsed" aria-expanded="true"
-              aria-controls="bengal-collapsed">
-              <span>Bengal Tiger</span>
-            </a>
-          </h5>
-          <div id="bengal-collapsed" class="collapse" aria-labelledby="bengal-collapsed">
-            <div class="card-body">
+      <div class="card">
+        <a class="collapsed d-flex text-light fadedtiger" data-toggle="collapse" href="#bengal-collapsed"
+          aria-expanded="true" aria-controls="bengal-collapsed">
+          <img class="card-image-top" src="images/tiger2.png">
+          <h2 class="card-img-overlay">
+            Bengal Tiger</h2>
+        </a>
+        <div id="bengal-collapsed" class="collapse" aria-labelledby="bengal-collapsed">
+          <div class="card-body"><span>
               The tiger is an iconic species.In 2016, an estimate of a global wild tiger population of
               approximately 3,890 individuals was
               presented during the Third Asia Ministerial Conference on Tiger Conservation.The WWF subsequently
               declared that the world's count of wild tigers had risen for the first time in a century.<a
                 target="_blank" class="btn btn-dark" href="https://en.wikipedia.org/wiki/Bengal_tiger">Learn
-                More</a>
+                More</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+ <!--Modal section--> 
+  <!--Modal for the newsletter.-->
+  <div class="modal fade" id="newsmodal" tabindex="0" role="dialog" aria-labelledby="newsmodal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h3>Sign up to our newsletter using this form!</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <form action="confirm1.html" id="newsform">
+                <fieldset class="col">
+                  <legend>
+                    Personal Information:
+                  </legend>
+                  <label>Your Name</label>
+                  <input type="text" class="form-control" required>
+                  <label>Your email</label>
+                  <input type="email" class="form-control" required>
+                </fieldset>
+                <button type="submit" class="btn-dark my-2">Sign up</button>
+                <button type="button" class="btn btn-default my-2" data-dismiss="modal">Back</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-<!--Modal for the newsletter.-->
-<div class="modal fade" id="newsmodal" tabindex="0" role="dialog" aria-labelledby="newsmodal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h3>Sign up to our newsletter using this form!</h3>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col">
-            <form action="confirm1.html" id="newsform">
-              <fieldset class="col">
-                <legend>
-                  Personal Information:
-                </legend>
-                <label>Your Name</label>
-                <input type="text" class="form-control" required>
-                <label>Your email</label>
-                <input type="email" class="form-control" required>
-              </fieldset>
-              <button type="submit" class="btn-dark my-2">Sign up</button>
-              <button type="button" class="btn btn-default my-2" data-dismiss="modal">Back</button>
-            </form>
+  <!--Modal for the donate button-->
+  <div class="modal fade" id="donatemodal" tabindex="0" role="dialog" aria-labelledby="newsmodal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h3>Thank you, fill out this form to continue.</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <form action="confirm2.html" id="ccform">
+                <fieldset class="col">
+                  <label>Amount (in USD$)</label>
+                  <input type="number" class="form-control" required>
+                </fieldset>
+                <fieldset class="col">
+                  <legend>
+                    Personal Information:
+                  </legend>
+                  <label>Your Name</label>
+                  <input type="text" class="form-control" required>
+                  <label>Your email</label>
+                  <input type="email" class="form-control" required>
+                  <label>Address</label>
+                  <input type="text" class="form-control" required>
+                  <label>City, State, Zip Code</label>
+                  <input type="text" class="form-control" required>
+                </fieldset>
+                <fieldset class="col">
+                  <legend>
+                    Credit Card Information:
+                  </legend>
+                  <label for="card-number">Credit Card Number</label>
+                  <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="form-control card-number"
+                    id="card-number" required>
+                  <label for="card-number">Expiration Date</label>
+                  <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="form-control card-expiration"
+                    id="card-expiration" required>
+                  <label for="card-number">CVV Number</label>
+                  <input placeholder="CVV" pattern="[0-9]*" type="text" class="form-control card-cvv" id="card-cvv"
+                    required>
+                  <label for="card-number">Billing Zip Code</label>
+                  <input placeholder="ZIP" pattern="[0-9]*" type="text" class="form-control card-zip" id="card-zip"
+                    required>
+                </fieldset>
+                <button type="submit" class="btn-dark my-2">Continue</button>
+                <button type="button" class="btn btn-default my-2" data-dismiss="modal">Back</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!--Modal for the donate button-->
-<div class="modal fade" id="donatemodal" tabindex="0" role="dialog" aria-labelledby="newsmodal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h3>Thank you, fill out this form to continue.</h3>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col">
-            <form action="confirm2.html" id="ccform">
-              <fieldset class="col">
-                <label>Amount (in USD$)</label>
-                <input type="number" class="form-control" required>
-              </fieldset>
-              <fieldset class="col">
-                <legend>
-                  Personal Information:
-                </legend>
-                <label>Your Name</label>
-                <input type="text" class="form-control" required>
-                <label>Your email</label>
-                <input type="email" class="form-control" required>
-                <label>Address</label>
-                <input type="text" class="form-control" required>
-                <label>City, State, Zip Code</label>
-                <input type="text" class="form-control" required>
-              </fieldset>
-              <fieldset class="col">
-                <legend>
-                  Credit Card Information:
-                </legend>
-                <label for="card-number">Credit Card Number</label>
-                <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="form-control card-number"
-                  id="card-number" required>
-                <label for="card-number">Expiration Date</label>
-                <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="form-control card-expiration"
-                  id="card-expiration" required>
-                <label for="card-number">CVV Number</label>
-                <input placeholder="CVV" pattern="[0-9]*" type="text" class="form-control card-cvv" id="card-cvv"
-                  required>
-                <label for="card-number">Billing Zip Code</label>
-                <input placeholder="ZIP" pattern="[0-9]*" type="text" class="form-control card-zip" id="card-zip"
-                  required>
-              </fieldset>
-              <button type="submit" class="btn-dark my-2">Continue</button>
-              <button type="button" class="btn btn-default my-2" data-dismiss="modal">Back</button>
-            </form>
+  <!--Modal for the Contact Form-->
+  <div class="modal fade" id="contactmodal" tabindex="0" role="dialog" aria-labelledby="contactmodal"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h3>Fill out this form if you have any questions. We will respond within a week.
+          </h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <form action="confirm3.html" id="contactform">
+                <fieldset class="col">
+                  <label>Name</label>
+                  <input type="text" class="form-control" required>
+                  <label>Email</label>
+                  <input type="email" class="form-control" required>
+                  <label>Question</label>
+                  <textarea class="form-control" placeholder="Write you question here!" required></textarea>
+                </fieldset>
+                <button type="submit" class="btn-dark my-2">Submit</button>
+                <button type="button" class="btn btn-default my-2" data-dismiss="modal">Back</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!--Modal for the Contact Form-->
-<div class="modal fade" id="contactmodal" tabindex="0" role="dialog" aria-labelledby="contactmodal"
-  aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h3>Fill out this form if you have any questions. We will respond within a week.
-        </h3>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col">
-            <form action="confirm3.html" id="contactform">
-              <fieldset class="col">
-                <label>Name</label>
-                <input type="text" class="form-control" required>
-                <label>Email</label>
-                <input type="email" class="form-control" required>
-                <label>Question</label>
-                <textarea class="form-control" placeholder="Write you question here!" required></textarea>
-              </fieldset>
-              <button type="submit" class="btn-dark my-2">Submit</button>
-              <button type="button" class="btn btn-default my-2" data-dismiss="modal">Back</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--End of modal section-->
+  <!--End of modal section-->
 
   <!--footer-->
   <footer class="pt-4">
